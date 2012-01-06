@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3ABCE8214B6922600CBE556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE8114B6922600CBE556 /* UIKit.framework */; };
+		D3ABCE8414B6922600CBE556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE8314B6922600CBE556 /* Foundation.framework */; };
+		D3ABCE8614B6922600CBE556 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE8514B6922600CBE556 /* CoreGraphics.framework */; };
+		D3ABCE8C14B6922600CBE556 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3ABCE8A14B6922600CBE556 /* InfoPlist.strings */; };
+		D3ABCE8E14B6922600CBE556 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ABCE8D14B6922600CBE556 /* main.m */; };
+		D3ABCE9214B6922600CBE556 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ABCE9114B6922600CBE556 /* AppDelegate.m */; };
+		D3ABCE9A14B6922600CBE556 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE9914B6922600CBE556 /* SenTestingKit.framework */; };
+		D3ABCE9B14B6922600CBE556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE8114B6922600CBE556 /* UIKit.framework */; };
+		D3ABCE9C14B6922600CBE556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE8314B6922600CBE556 /* Foundation.framework */; };
+		D3ABCEA414B6922600CBE556 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3ABCEA214B6922600CBE556 /* InfoPlist.strings */; };
+		D3ABCEA714B6922600CBE556 /* PillOrPokemonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ABCEA614B6922600CBE556 /* PillOrPokemonTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3ABCE9D14B6922600CBE556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3ABCE7414B6922400CBE556 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3ABCE7C14B6922500CBE556;
+			remoteInfo = PillOrPokemon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3ABCE7D14B6922600CBE556 /* PillOrPokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillOrPokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3ABCE8114B6922600CBE556 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D3ABCE8314B6922600CBE556 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D3ABCE8514B6922600CBE556 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3ABCE8914B6922600CBE556 /* PillOrPokemon-Info.plist */ = {isa = PBXFileReference; path = "PillOrPokemon-Info.plist"; sourceTree = "<group>"; };
+		D3ABCE8B14B6922600CBE556 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3ABCE8D14B6922600CBE556 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3ABCE8F14B6922600CBE556 /* PillOrPokemon-Prefix.pch */ = {isa = PBXFileReference; path = "PillOrPokemon-Prefix.pch"; sourceTree = "<group>"; };
+		D3ABCE9014B6922600CBE556 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D3ABCE9114B6922600CBE556 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D3ABCE9814B6922600CBE556 /* PillOrPokemonTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PillOrPokemonTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3ABCE9914B6922600CBE556 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D3ABCEA114B6922600CBE556 /* PillOrPokemonTests-Info.plist */ = {isa = PBXFileReference; path = "PillOrPokemonTests-Info.plist"; sourceTree = "<group>"; };
+		D3ABCEA314B6922600CBE556 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3ABCEA514B6922600CBE556 /* PillOrPokemonTests.h */ = {isa = PBXFileReference; path = PillOrPokemonTests.h; sourceTree = "<group>"; };
+		D3ABCEA614B6922600CBE556 /* PillOrPokemonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PillOrPokemonTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3ABCE7A14B6922500CBE556 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ABCE8214B6922600CBE556 /* UIKit.framework in Frameworks */,
+				D3ABCE8414B6922600CBE556 /* Foundation.framework in Frameworks */,
+				D3ABCE8614B6922600CBE556 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3ABCE9414B6922600CBE556 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ABCE9A14B6922600CBE556 /* SenTestingKit.framework in Frameworks */,
+				D3ABCE9B14B6922600CBE556 /* UIKit.framework in Frameworks */,
+				D3ABCE9C14B6922600CBE556 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3ABCE7214B6922400CBE556 = {
+			isa = PBXGroup;
+			children = (
+				D3ABCE8714B6922600CBE556 /* PillOrPokemon */,
+				D3ABCE9F14B6922600CBE556 /* PillOrPokemonTests */,
+				D3ABCE8014B6922600CBE556 /* Frameworks */,
+				D3ABCE7E14B6922600CBE556 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3ABCE7E14B6922600CBE556 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABCE7D14B6922600CBE556 /* PillOrPokemon.app */,
+				D3ABCE9814B6922600CBE556 /* PillOrPokemonTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3ABCE8014B6922600CBE556 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABCE8114B6922600CBE556 /* UIKit.framework */,
+				D3ABCE8314B6922600CBE556 /* Foundation.framework */,
+				D3ABCE8514B6922600CBE556 /* CoreGraphics.framework */,
+				D3ABCE9914B6922600CBE556 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3ABCE8714B6922600CBE556 /* PillOrPokemon */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABCE9014B6922600CBE556 /* AppDelegate.h */,
+				D3ABCE9114B6922600CBE556 /* AppDelegate.m */,
+				D3ABCE8814B6922600CBE556 /* Supporting Files */,
+			);
+			path = PillOrPokemon;
+			sourceTree = "<group>";
+		};
+		D3ABCE8814B6922600CBE556 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABCE8914B6922600CBE556 /* PillOrPokemon-Info.plist */,
+				D3ABCE8A14B6922600CBE556 /* InfoPlist.strings */,
+				D3ABCE8D14B6922600CBE556 /* main.m */,
+				D3ABCE8F14B6922600CBE556 /* PillOrPokemon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3ABCE9F14B6922600CBE556 /* PillOrPokemonTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABCEA514B6922600CBE556 /* PillOrPokemonTests.h */,
+				D3ABCEA614B6922600CBE556 /* PillOrPokemonTests.m */,
+				D3ABCEA014B6922600CBE556 /* Supporting Files */,
+			);
+			path = PillOrPokemonTests;
+			sourceTree = "<group>";
+		};
+		D3ABCEA014B6922600CBE556 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABCEA114B6922600CBE556 /* PillOrPokemonTests-Info.plist */,
+				D3ABCEA214B6922600CBE556 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3ABCE7C14B6922500CBE556 /* PillOrPokemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3ABCEAA14B6922600CBE556 /* Build configuration list for PBXNativeTarget "PillOrPokemon" */;
+			buildPhases = (
+				D3ABCE7914B6922500CBE556 /* Sources */,
+				D3ABCE7A14B6922500CBE556 /* Frameworks */,
+				D3ABCE7B14B6922500CBE556 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PillOrPokemon;
+			productName = PillOrPokemon;
+			productReference = D3ABCE7D14B6922600CBE556 /* PillOrPokemon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3ABCE9714B6922600CBE556 /* PillOrPokemonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3ABCEAD14B6922600CBE556 /* Build configuration list for PBXNativeTarget "PillOrPokemonTests" */;
+			buildPhases = (
+				D3ABCE9314B6922600CBE556 /* Sources */,
+				D3ABCE9414B6922600CBE556 /* Frameworks */,
+				D3ABCE9514B6922600CBE556 /* Resources */,
+				D3ABCE9614B6922600CBE556 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3ABCE9E14B6922600CBE556 /* PBXTargetDependency */,
+			);
+			name = PillOrPokemonTests;
+			productName = PillOrPokemonTests;
+			productReference = D3ABCE9814B6922600CBE556 /* PillOrPokemonTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3ABCE7414B6922400CBE556 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = D3ABCE7714B6922400CBE556 /* Build configuration list for PBXProject "PillOrPokemon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D3ABCE7214B6922400CBE556;
+			productRefGroup = D3ABCE7E14B6922600CBE556 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3ABCE7C14B6922500CBE556 /* PillOrPokemon */,
+				D3ABCE9714B6922600CBE556 /* PillOrPokemonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3ABCE7B14B6922500CBE556 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ABCE8C14B6922600CBE556 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3ABCE9514B6922600CBE556 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ABCEA414B6922600CBE556 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3ABCE9614B6922600CBE556 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3ABCE7914B6922500CBE556 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ABCE8E14B6922600CBE556 /* main.m in Sources */,
+				D3ABCE9214B6922600CBE556 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3ABCE9314B6922600CBE556 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ABCEA714B6922600CBE556 /* PillOrPokemonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3ABCE9E14B6922600CBE556 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3ABCE7C14B6922500CBE556 /* PillOrPokemon */;
+			targetProxy = D3ABCE9D14B6922600CBE556 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3ABCE8A14B6922600CBE556 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3ABCE8B14B6922600CBE556 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D3ABCEA214B6922600CBE556 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3ABCEA314B6922600CBE556 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3ABCEA814B6922600CBE556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D3ABCEA914B6922600CBE556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3ABCEAB14B6922600CBE556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PillOrPokemon/PillOrPokemon-Prefix.pch";
+				INFOPLIST_FILE = "PillOrPokemon/PillOrPokemon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D3ABCEAC14B6922600CBE556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PillOrPokemon/PillOrPokemon-Prefix.pch";
+				INFOPLIST_FILE = "PillOrPokemon/PillOrPokemon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D3ABCEAE14B6922600CBE556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PillOrPokemon.app/PillOrPokemon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PillOrPokemon/PillOrPokemon-Prefix.pch";
+				INFOPLIST_FILE = "PillOrPokemonTests/PillOrPokemonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D3ABCEAF14B6922600CBE556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PillOrPokemon.app/PillOrPokemon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PillOrPokemon/PillOrPokemon-Prefix.pch";
+				INFOPLIST_FILE = "PillOrPokemonTests/PillOrPokemonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3ABCE7714B6922400CBE556 /* Build configuration list for PBXProject "PillOrPokemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3ABCEA814B6922600CBE556 /* Debug */,
+				D3ABCEA914B6922600CBE556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3ABCEAA14B6922600CBE556 /* Build configuration list for PBXNativeTarget "PillOrPokemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3ABCEAB14B6922600CBE556 /* Debug */,
+				D3ABCEAC14B6922600CBE556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D3ABCEAD14B6922600CBE556 /* Build configuration list for PBXNativeTarget "PillOrPokemonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3ABCEAE14B6922600CBE556 /* Debug */,
+				D3ABCEAF14B6922600CBE556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3ABCE7414B6922400CBE556 /* Project object */;
+}
