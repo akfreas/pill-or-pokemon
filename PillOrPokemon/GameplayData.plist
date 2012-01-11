@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<array>
+		<dict>
+			<key>description</key>
+			<string>Accelgor</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#617, 5th generation, Bug
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Aipom</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#190, 2nd generation, Normal
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Altaria</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#334, 3rd generation, Dragon Flying
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Aron</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#304, 3rd generation, Steel Rock
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Azurill</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#298, 3rd generation, Normal
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Azumarill</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#184, 2nd generation, Water
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Basculin</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#550, 5th generation, Water
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Beedrill</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#015, 1st generation, Bug Poison
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Bibarel</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#400, 4th generation, Normal Water
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Bonsly</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#438, 4th generation, Rock
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Bronzor</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#436, 4th generation, Steel Psychic
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Cleffa</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#173, 2nd generation, Normal
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Cobalion</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#638, 5th generation, Steel Fighting
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Cryogonal</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#615, 5th generation, Ice
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Deino</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#633, 5th generation, Dark Dragon
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Deoxys</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#386, 3rd generation, Psychic
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Elgyem</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#605, 5th generation, Psychic
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Escavalier</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#589, 5th generation, Bug Steel
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Excadrill</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string> #530, 5th generation, Ground Steel
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Espeon</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#196, 2nd generation, Psychic
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Finneon</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#456, 4th generation, Water
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Flareon</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#136, 1st generation, Fire
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Fraxure</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#611, 5th generation, Dragon
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Gastrodon</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#423, 4th generation, Water Ground
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Genesect</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#649, 5th generation, Bug Steel
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Giratina</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#487, 4th generation, Ghost Dragon
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Glaceon</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#471, 4th generation, Ice
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Gligar</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#207, 2nd generation, Ground Flying
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Gliscor</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#472, 4th generation, Ground Flying
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Groudon</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#383, 3rd generation, Ground
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Grovyle</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#253, 3rd generation, Grass
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Heatran</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#485, 4th generation, Fire Steel
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Illumise</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#314, 3rd generation, Bug
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Kecleon</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#352, 3rd generation, Normal
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Ledian</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#166, 2nd generation, Bug Flying
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Linoone</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#264, 3rd generation, Normal
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Lombre</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#271, 3rd generation, Water Grass
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Lugia</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#249, 2nd generation, Psychic Flying
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Lumineon</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#457, 4th generation, Water
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Lunatone</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#337, 3rd generation, Rock Psychic
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Luxio</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#404, 4th generation, Electric
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Mantine</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#226, 2nd generation, Water Flying
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Maractus</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#556, 5th generation, Grass
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Marill</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#183, 2nd generation, Water
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Marowak</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#105, 1st generation, Ground
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Meloetta</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#648, 5th generation, Normal Psychic Fighting
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Mesprit</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#481, 4th generation, Psychic
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Metang</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#375, 3rd generation, Steel Psychic
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Milotic</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#350, 3rd generation, Water
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Moltres</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#146, 1st generation, Fire Flying
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Munchlax</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#446, 4th generation, Normal
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Nincada</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#290, 3rd generation, Bug Ground
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Numel</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#322, 3rd generation, Fire Ground
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Omastar</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#139, 1st generation, Rock Water
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Petilil</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#548, 5th generation, Grass
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Rayquaza</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#384, 3rd generation, Dragon Flying
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Remoraid</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#223, 2nd generation, Water
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Reuniclus</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#579, 5th generation, Psychic
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Rhydon</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#112, 1st generation, Ground Rock
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Rhyperior</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#464, 4th generation, Ground Rock
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Sentret</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#161, 2nd generation, Normal
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Servine</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#496, 5th generation, Grass
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Shaymin</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#492, 4th generation, Grass Flying
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Shinx</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#403, 4th generation, Electric
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Solosis</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#577, 5th generation, Psychic
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Spinarak</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#167, 2nd generation, Bug Poison
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Staravia</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#397, 4th generation, Normal Flying
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Steelix</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#208, 2nd generation, Steel Ground
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Tauros</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#128, 1st generation, Normal
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Tepig</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#498, 5th generation, Fire
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Umbreon</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#197, 2nd generation, Dark
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Ursaring</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#217, 2nd generation, Normal
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Vaporeon</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#134, 1st generation, Water
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Vibrava</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#329, 3rd generation, Ground Dragod
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Virizion</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#640, 5th generation, Grass Fighting
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Volcarona</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#637, 5th generation, Bug Fire
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Voltorb</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#100, 1st generation, Electric
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Vulpix</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#037, 1st generation, Fire
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Zebstrika</string>
+			<key>type</key>
+			<string>pokemon</string>
+			<key>name</key>
+			<string>#523, 5th generation, Electric</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Abacavir</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>antiviral medication to treat HIV
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Abraxane</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>a cancer medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Aceon</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>ACE inhibitor for high blood pressure
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Actos</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>diabetes medication for blood sugar levels
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Aranesp</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>artificial protein to protect red blood cells
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Avelox</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>antibacteria medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Aviane</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>contraceptive
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Azor</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>muscle relaxer
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Banzel</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication used to treat epilepsy
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Blocadren</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication for high blood pressure
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Briellyn</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>contraceptive
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Cafergot</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>brand name for caffeine
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Carnitor</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication for metabolism disorders
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Clasteon</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>cancer medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Colcrys</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>pain reducer
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Crestor</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication to help lower cholesterol
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Daliresp</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>inflammation reducer
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Decadron</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>inflammation reducer for athsma treatment
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Dolotic</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>pain reliever for the ear
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Doribax</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>antibacteria for the stomach
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Econochlor</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication for serious infections
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Elocon</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>steroid to reduce swelling
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Fareston</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>breast cancer medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Flector</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>pain reliever
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Fuzeon</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>HIV medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Gammagard</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication to treat deficiencies in the immune system
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Gemzar</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>cancer medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Geodon</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication to treat schizophrenia
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Geref</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication to treat growth hormone deficiency in children
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Gleevec</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>leukemia medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Hycort</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>inflammation reducer
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Hyperrab</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>drug used to treat rabies
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Hytrin</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>muscle relaxer
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Ifex</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>cancer medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Iplex</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication for growth failure
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>IvyStat</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>rash treatment medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Jalyn</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>muscle relaxer
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Jantoven</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>blood thinner to prevent heart attacks
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Jolessa</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>contraceptive
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Kaletra</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>HIV medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Keppra</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>epilepsy/seizure treatment medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Lutera</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>contraceptive
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Luxiq</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>steroid to prevent inflammation
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Maxalt</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medicine to treat headaches
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Mentax</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>antifungus medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Merrem</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>antibacteria for the abdomen
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Mylotarg</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>cancer medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Nadolol</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>drug to help blood flow
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Nalfon</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>pain reliever
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Namenda</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication to treat Alzheimer&apos;s disease
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Navane</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>schizophrenia medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Opana</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>pain reliever
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Ozurdex</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>drug to treat macular edema (an eye condition)
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Proglycem</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>drug used to raise blood sugar
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Protonix</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication to lower stomach acid production
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Quinidine</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>drug to treat heart rhythm disorders
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Ranexa</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication to treat chronic chest pain
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Renagel</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication to treat low levels of calcium
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Rescriptor</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>HIV medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>RotaTeq</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>vaccine for the rotavirus 
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Rozerem</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>sedative to treat wake cycle disorders
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Sanctura</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication to treat urinary incontinence 
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Sinemet</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication to treat Parkinson&apos;s disease
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Starlix</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>medication to help control blood sugar levels
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Ticlid</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>drug to prevent blood clots
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Tygacil</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>antibacteria
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Ultram</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>pain reliever
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Urso</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>acid to decrease cholesterol
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Vanatrip</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>antidepressant
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Viibryd</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>antidepressant
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Vitoxapap</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>pain reliever and fever reducer
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Vivarin</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>brand name for caffeine
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Voltaren</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>anti inflammatory drug
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Xanax</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>drug to treat anxiety disorders, panic disorders and depression
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Xibrom</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>antiinflammatory drug
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Xigris</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>drug to treat sepsis
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Zanosar</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>cancer medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Zeasorb</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>athlete&apos;s foot treatment medication
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Zomig</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>headache medicine
+</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Zyvox</string>
+			<key>type</key>
+			<string>pill</string>
+			<key>name</key>
+			<string>antibacteria</string>
+		</dict>
+	</array>
+</dict>
+</plist>
