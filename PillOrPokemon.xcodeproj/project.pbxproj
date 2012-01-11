@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D371991B14BBE4E600FD78C8 /* ZoneSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = D371991A14BBE4E600FD78C8 /* ZoneSelector.xib */; };
+		D371991D14BBE52900FD78C8 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = D371991C14BBE52900FD78C8 /* banner.png */; };
+		D371992314BBE55C00FD78C8 /* zone1.png in Resources */ = {isa = PBXBuildFile; fileRef = D371991F14BBE55C00FD78C8 /* zone1.png */; };
+		D371992414BBE55C00FD78C8 /* zone2.png in Resources */ = {isa = PBXBuildFile; fileRef = D371992014BBE55C00FD78C8 /* zone2.png */; };
+		D371992514BBE55C00FD78C8 /* zone3.png in Resources */ = {isa = PBXBuildFile; fileRef = D371992114BBE55C00FD78C8 /* zone3.png */; };
+		D371992614BBE55C00FD78C8 /* zone4.png in Resources */ = {isa = PBXBuildFile; fileRef = D371992214BBE55C00FD78C8 /* zone4.png */; };
+		D371992914BBE69900FD78C8 /* VC_ZoneSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = D371992814BBE69900FD78C8 /* VC_ZoneSelector.m */; };
+		D371992B14BBE92700FD78C8 /* GamePlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = D371992A14BBE92700FD78C8 /* GamePlay.xib */; };
+		D371992E14BBEA4800FD78C8 /* choose_pill.png in Resources */ = {isa = PBXBuildFile; fileRef = D371992C14BBEA4800FD78C8 /* choose_pill.png */; };
+		D371992F14BBEA4800FD78C8 /* choose_pokemon.png in Resources */ = {isa = PBXBuildFile; fileRef = D371992D14BBEA4800FD78C8 /* choose_pokemon.png */; };
+		D371993214BBF02F00FD78C8 /* VC_GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D371993114BBF02F00FD78C8 /* VC_GamePlay.m */; };
+		D371993414BBF50700FD78C8 /* GameplayData.plist in Resources */ = {isa = PBXBuildFile; fileRef = D371993314BBF50700FD78C8 /* GameplayData.plist */; };
 		D3ABCE8214B6922600CBE556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE8114B6922600CBE556 /* UIKit.framework */; };
 		D3ABCE8414B6922600CBE556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE8314B6922600CBE556 /* Foundation.framework */; };
 		D3ABCE8614B6922600CBE556 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE8514B6922600CBE556 /* CoreGraphics.framework */; };
@@ -18,6 +30,11 @@
 		D3ABCE9C14B6922600CBE556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE8314B6922600CBE556 /* Foundation.framework */; };
 		D3ABCEA414B6922600CBE556 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3ABCEA214B6922600CBE556 /* InfoPlist.strings */; };
 		D3ABCEA714B6922600CBE556 /* PillOrPokemonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ABCEA614B6922600CBE556 /* PillOrPokemonTests.m */; };
+		D3ABCEB214B6947400CBE556 /* SplashScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3ABCEB114B6947400CBE556 /* SplashScreen.xib */; };
+		D3ABCEB714B699DE00CBE556 /* VC_Main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ABCEB614B699DE00CBE556 /* VC_Main.m */; };
+		D3ABCEB914B69BF000CBE556 /* appbanner.png in Resources */ = {isa = PBXBuildFile; fileRef = D3ABCEB814B69BF000CBE556 /* appbanner.png */; };
+		D3ABCEBB14B69DB600CBE556 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3ABCEBA14B69DB600CBE556 /* MainView.xib */; };
+		D3ABCEC114B6A3FC00CBE556 /* VC_SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = D3ABCEC014B6A3FC00CBE556 /* VC_SplashScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,22 +48,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D371991A14BBE4E600FD78C8 /* ZoneSelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoneSelector.xib; sourceTree = "<group>"; };
+		D371991C14BBE52900FD78C8 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
+		D371991F14BBE55C00FD78C8 /* zone1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zone1.png; sourceTree = "<group>"; };
+		D371992014BBE55C00FD78C8 /* zone2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zone2.png; sourceTree = "<group>"; };
+		D371992114BBE55C00FD78C8 /* zone3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zone3.png; sourceTree = "<group>"; };
+		D371992214BBE55C00FD78C8 /* zone4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zone4.png; sourceTree = "<group>"; };
+		D371992714BBE69900FD78C8 /* VC_ZoneSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC_ZoneSelector.h; sourceTree = "<group>"; };
+		D371992814BBE69900FD78C8 /* VC_ZoneSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC_ZoneSelector.m; sourceTree = "<group>"; };
+		D371992A14BBE92700FD78C8 /* GamePlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePlay.xib; sourceTree = "<group>"; };
+		D371992C14BBEA4800FD78C8 /* choose_pill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choose_pill.png; sourceTree = "<group>"; };
+		D371992D14BBEA4800FD78C8 /* choose_pokemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choose_pokemon.png; sourceTree = "<group>"; };
+		D371993014BBF02F00FD78C8 /* VC_GamePlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC_GamePlay.h; sourceTree = "<group>"; };
+		D371993114BBF02F00FD78C8 /* VC_GamePlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC_GamePlay.m; sourceTree = "<group>"; };
+		D371993314BBF50700FD78C8 /* GameplayData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameplayData.plist; sourceTree = "<group>"; };
 		D3ABCE7D14B6922600CBE556 /* PillOrPokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillOrPokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ABCE8114B6922600CBE556 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3ABCE8314B6922600CBE556 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3ABCE8514B6922600CBE556 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D3ABCE8914B6922600CBE556 /* PillOrPokemon-Info.plist */ = {isa = PBXFileReference; path = "PillOrPokemon-Info.plist"; sourceTree = "<group>"; };
+		D3ABCE8914B6922600CBE556 /* PillOrPokemon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PillOrPokemon-Info.plist"; sourceTree = "<group>"; };
 		D3ABCE8B14B6922600CBE556 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3ABCE8D14B6922600CBE556 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D3ABCE8F14B6922600CBE556 /* PillOrPokemon-Prefix.pch */ = {isa = PBXFileReference; path = "PillOrPokemon-Prefix.pch"; sourceTree = "<group>"; };
-		D3ABCE9014B6922600CBE556 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D3ABCE8F14B6922600CBE556 /* PillOrPokemon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PillOrPokemon-Prefix.pch"; sourceTree = "<group>"; };
+		D3ABCE9014B6922600CBE556 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3ABCE9114B6922600CBE556 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D3ABCE9814B6922600CBE556 /* PillOrPokemonTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PillOrPokemonTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ABCE9914B6922600CBE556 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D3ABCEA114B6922600CBE556 /* PillOrPokemonTests-Info.plist */ = {isa = PBXFileReference; path = "PillOrPokemonTests-Info.plist"; sourceTree = "<group>"; };
+		D3ABCEA114B6922600CBE556 /* PillOrPokemonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PillOrPokemonTests-Info.plist"; sourceTree = "<group>"; };
 		D3ABCEA314B6922600CBE556 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D3ABCEA514B6922600CBE556 /* PillOrPokemonTests.h */ = {isa = PBXFileReference; path = PillOrPokemonTests.h; sourceTree = "<group>"; };
+		D3ABCEA514B6922600CBE556 /* PillOrPokemonTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PillOrPokemonTests.h; sourceTree = "<group>"; };
 		D3ABCEA614B6922600CBE556 /* PillOrPokemonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PillOrPokemonTests.m; sourceTree = "<group>"; };
+		D3ABCEB114B6947400CBE556 /* SplashScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashScreen.xib; sourceTree = "<group>"; };
+		D3ABCEB514B699DE00CBE556 /* VC_Main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC_Main.h; sourceTree = "<group>"; };
+		D3ABCEB614B699DE00CBE556 /* VC_Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC_Main.m; sourceTree = "<group>"; };
+		D3ABCEB814B69BF000CBE556 /* appbanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appbanner.png; sourceTree = "<group>"; };
+		D3ABCEBA14B69DB600CBE556 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		D3ABCEBF14B6A3FC00CBE556 /* VC_SplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC_SplashScreen.h; sourceTree = "<group>"; };
+		D3ABCEC014B6A3FC00CBE556 /* VC_SplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC_SplashScreen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +114,8 @@
 		D3ABCE7214B6922400CBE556 = {
 			isa = PBXGroup;
 			children = (
-				D3ABCE8714B6922600CBE556 /* PillOrPokemon */,
+				D3ABCEB014B6944F00CBE556 /* Resources */,
+				D3ABCE8714B6922600CBE556 /* ViewControllers */,
 				D3ABCE9F14B6922600CBE556 /* PillOrPokemonTests */,
 				D3ABCE8014B6922600CBE556 /* Frameworks */,
 				D3ABCE7E14B6922600CBE556 /* Products */,
@@ -103,13 +142,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D3ABCE8714B6922600CBE556 /* PillOrPokemon */ = {
+		D3ABCE8714B6922600CBE556 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D371993014BBF02F00FD78C8 /* VC_GamePlay.h */,
+				D371993114BBF02F00FD78C8 /* VC_GamePlay.m */,
+				D371992714BBE69900FD78C8 /* VC_ZoneSelector.h */,
+				D371992814BBE69900FD78C8 /* VC_ZoneSelector.m */,
+				D3ABCEBF14B6A3FC00CBE556 /* VC_SplashScreen.h */,
+				D3ABCEC014B6A3FC00CBE556 /* VC_SplashScreen.m */,
+				D3ABCEB514B699DE00CBE556 /* VC_Main.h */,
+				D3ABCEB614B699DE00CBE556 /* VC_Main.m */,
 				D3ABCE9014B6922600CBE556 /* AppDelegate.h */,
 				D3ABCE9114B6922600CBE556 /* AppDelegate.m */,
 				D3ABCE8814B6922600CBE556 /* Supporting Files */,
 			);
+			name = ViewControllers;
 			path = PillOrPokemon;
 			sourceTree = "<group>";
 		};
@@ -120,6 +168,7 @@
 				D3ABCE8A14B6922600CBE556 /* InfoPlist.strings */,
 				D3ABCE8D14B6922600CBE556 /* main.m */,
 				D3ABCE8F14B6922600CBE556 /* PillOrPokemon-Prefix.pch */,
+				D371993314BBF50700FD78C8 /* GameplayData.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +190,25 @@
 				D3ABCEA214B6922600CBE556 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3ABCEB014B6944F00CBE556 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D371992A14BBE92700FD78C8 /* GamePlay.xib */,
+				D3ABCEBA14B69DB600CBE556 /* MainView.xib */,
+				D3ABCEB114B6947400CBE556 /* SplashScreen.xib */,
+				D371991A14BBE4E600FD78C8 /* ZoneSelector.xib */,
+				D371991C14BBE52900FD78C8 /* banner.png */,
+				D3ABCEB814B69BF000CBE556 /* appbanner.png */,
+				D371991F14BBE55C00FD78C8 /* zone1.png */,
+				D371992014BBE55C00FD78C8 /* zone2.png */,
+				D371992114BBE55C00FD78C8 /* zone3.png */,
+				D371992214BBE55C00FD78C8 /* zone4.png */,
+				D371992C14BBEA4800FD78C8 /* choose_pill.png */,
+				D371992D14BBEA4800FD78C8 /* choose_pokemon.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +282,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3ABCE8C14B6922600CBE556 /* InfoPlist.strings in Resources */,
+				D3ABCEB214B6947400CBE556 /* SplashScreen.xib in Resources */,
+				D3ABCEB914B69BF000CBE556 /* appbanner.png in Resources */,
+				D3ABCEBB14B69DB600CBE556 /* MainView.xib in Resources */,
+				D371991B14BBE4E600FD78C8 /* ZoneSelector.xib in Resources */,
+				D371991D14BBE52900FD78C8 /* banner.png in Resources */,
+				D371992314BBE55C00FD78C8 /* zone1.png in Resources */,
+				D371992414BBE55C00FD78C8 /* zone2.png in Resources */,
+				D371992514BBE55C00FD78C8 /* zone3.png in Resources */,
+				D371992614BBE55C00FD78C8 /* zone4.png in Resources */,
+				D371992B14BBE92700FD78C8 /* GamePlay.xib in Resources */,
+				D371992E14BBEA4800FD78C8 /* choose_pill.png in Resources */,
+				D371992F14BBEA4800FD78C8 /* choose_pokemon.png in Resources */,
+				D371993414BBF50700FD78C8 /* GameplayData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +331,10 @@
 			files = (
 				D3ABCE8E14B6922600CBE556 /* main.m in Sources */,
 				D3ABCE9214B6922600CBE556 /* AppDelegate.m in Sources */,
+				D3ABCEB714B699DE00CBE556 /* VC_Main.m in Sources */,
+				D3ABCEC114B6A3FC00CBE556 /* VC_SplashScreen.m in Sources */,
+				D371992914BBE69900FD78C8 /* VC_ZoneSelector.m in Sources */,
+				D371993214BBF02F00FD78C8 /* VC_GamePlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +496,7 @@
 				D3ABCEAC14B6922600CBE556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3ABCEAD14B6922600CBE556 /* Build configuration list for PBXNativeTarget "PillOrPokemonTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +505,7 @@
 				D3ABCEAF14B6922600CBE556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
