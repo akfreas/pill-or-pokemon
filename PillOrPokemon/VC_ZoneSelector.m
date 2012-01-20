@@ -12,7 +12,7 @@
 
 
 -(id)init {
-    self = [super initWithNibName:@"ZoneSelector" bundle:nil];
+    self = [super initWithNibName:@"ZoneSelector" bundle:[NSBundle mainBundle]];
     return self;
 }
 
@@ -20,19 +20,21 @@
     
     VC_GamePlay *gameView = [[VC_GamePlay alloc] initWithZone:zone];
     UINavigationController *game = [[UINavigationController alloc] initWithRootViewController:gameView];
-    
-    game.modalPresentationStyle = UIModalPresentationFullScreen;
+    game.navigationBar.tintColor = [UIColor blackColor];
+    game.modalPresentationStyle = UIModalPresentationPageSheet;
     game.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentModalViewController:game animated:YES];
+    [self presentModalViewController:game animated:NO];
     
 }
 
--(IBAction)selectZone:(id)sender {
+-(IBAction)zoneSelected:(id)sender  {
     
     UIButton *zoneButton = (UIButton *)sender;
     [self loadZone:zoneButton.tag];
 
 }
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

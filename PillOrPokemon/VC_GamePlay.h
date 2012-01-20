@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VC_GamePlay : UIViewController {
+@interface VC_GamePlay : UIViewController < UIAlertViewDelegate, UIPopoverControllerDelegate> {
     
-    NSArray *gamePlayData;
     
 }
 
--(id)initWithZone:(NSInteger)zone;
+-(id)initWithZone:(NSInteger)theZone;
+-(IBAction)chooseType:(id)sender;
 @end

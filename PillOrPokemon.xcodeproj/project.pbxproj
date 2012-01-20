@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09C1957814C91FAE001529B0 /* icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C1957714C91FAE001529B0 /* icon copy.png */; };
 		D371991B14BBE4E600FD78C8 /* ZoneSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = D371991A14BBE4E600FD78C8 /* ZoneSelector.xib */; };
 		D371991D14BBE52900FD78C8 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = D371991C14BBE52900FD78C8 /* banner.png */; };
 		D371992314BBE55C00FD78C8 /* zone1.png in Resources */ = {isa = PBXBuildFile; fileRef = D371991F14BBE55C00FD78C8 /* zone1.png */; };
@@ -18,7 +19,7 @@
 		D371992E14BBEA4800FD78C8 /* choose_pill.png in Resources */ = {isa = PBXBuildFile; fileRef = D371992C14BBEA4800FD78C8 /* choose_pill.png */; };
 		D371992F14BBEA4800FD78C8 /* choose_pokemon.png in Resources */ = {isa = PBXBuildFile; fileRef = D371992D14BBEA4800FD78C8 /* choose_pokemon.png */; };
 		D371993214BBF02F00FD78C8 /* VC_GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D371993114BBF02F00FD78C8 /* VC_GamePlay.m */; };
-		D371993414BBF50700FD78C8 /* GameplayData.plist in Resources */ = {isa = PBXBuildFile; fileRef = D371993314BBF50700FD78C8 /* GameplayData.plist */; };
+		D371993414BBF50700FD78C8 /* PPData.plist in Resources */ = {isa = PBXBuildFile; fileRef = D371993314BBF50700FD78C8 /* PPData.plist */; };
 		D3ABCE8214B6922600CBE556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE8114B6922600CBE556 /* UIKit.framework */; };
 		D3ABCE8414B6922600CBE556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE8314B6922600CBE556 /* Foundation.framework */; };
 		D3ABCE8614B6922600CBE556 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABCE8514B6922600CBE556 /* CoreGraphics.framework */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09C1957714C91FAE001529B0 /* icon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon copy.png"; sourceTree = "<group>"; };
 		D371991A14BBE4E600FD78C8 /* ZoneSelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoneSelector.xib; sourceTree = "<group>"; };
 		D371991C14BBE52900FD78C8 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
 		D371991F14BBE55C00FD78C8 /* zone1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zone1.png; sourceTree = "<group>"; };
@@ -61,7 +63,7 @@
 		D371992D14BBEA4800FD78C8 /* choose_pokemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choose_pokemon.png; sourceTree = "<group>"; };
 		D371993014BBF02F00FD78C8 /* VC_GamePlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC_GamePlay.h; sourceTree = "<group>"; };
 		D371993114BBF02F00FD78C8 /* VC_GamePlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC_GamePlay.m; sourceTree = "<group>"; };
-		D371993314BBF50700FD78C8 /* GameplayData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameplayData.plist; sourceTree = "<group>"; };
+		D371993314BBF50700FD78C8 /* PPData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PPData.plist; path = PillOrPokemon/PPData.plist; sourceTree = "<group>"; };
 		D3ABCE7D14B6922600CBE556 /* PillOrPokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillOrPokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3ABCE8114B6922600CBE556 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3ABCE8314B6922600CBE556 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +116,7 @@
 		D3ABCE7214B6922400CBE556 = {
 			isa = PBXGroup;
 			children = (
+				09C1957714C91FAE001529B0 /* icon copy.png */,
 				D3ABCEB014B6944F00CBE556 /* Resources */,
 				D3ABCE8714B6922600CBE556 /* ViewControllers */,
 				D3ABCE9F14B6922600CBE556 /* PillOrPokemonTests */,
@@ -168,7 +171,6 @@
 				D3ABCE8A14B6922600CBE556 /* InfoPlist.strings */,
 				D3ABCE8D14B6922600CBE556 /* main.m */,
 				D3ABCE8F14B6922600CBE556 /* PillOrPokemon-Prefix.pch */,
-				D371993314BBF50700FD78C8 /* GameplayData.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,6 +197,7 @@
 		D3ABCEB014B6944F00CBE556 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D371993314BBF50700FD78C8 /* PPData.plist */,
 				D371992A14BBE92700FD78C8 /* GamePlay.xib */,
 				D3ABCEBA14B69DB600CBE556 /* MainView.xib */,
 				D3ABCEB114B6947400CBE556 /* SplashScreen.xib */,
@@ -294,7 +297,8 @@
 				D371992B14BBE92700FD78C8 /* GamePlay.xib in Resources */,
 				D371992E14BBEA4800FD78C8 /* choose_pill.png in Resources */,
 				D371992F14BBEA4800FD78C8 /* choose_pokemon.png in Resources */,
-				D371993414BBF50700FD78C8 /* GameplayData.plist in Resources */,
+				D371993414BBF50700FD78C8 /* PPData.plist in Resources */,
+				09C1957814C91FAE001529B0 /* icon copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

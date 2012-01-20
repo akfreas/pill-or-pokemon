@@ -12,6 +12,8 @@
 
 @implementation VC_Main
 
+@synthesize zoneSelector;
+
 
 -(id)init {
     self = [self initWithNibName:@"MainView" bundle:nil];
@@ -22,6 +24,7 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     firstTime = YES;
+        
     
 }
 
@@ -30,66 +33,18 @@
     if(firstTime){
         firstTime = NO;
         VC_SplashScreen *splashView = [[VC_SplashScreen alloc] init];
-        UINavigationController *splashScreen = [[UINavigationController alloc] initWithRootViewController:splashView];
-        splashScreen.modalPresentationStyle = UIModalPresentationFullScreen;
-        splashScreen.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        [self presentModalViewController:splashScreen animated:YES];
+
+        splashView.modalPresentationStyle = UIModalPresentationFullScreen;
+        splashView.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentModalViewController:splashView animated:YES];
     } else {
-        
-        VC_ZoneSelector *zoneSelector = [[VC_ZoneSelector alloc] init];
+        zoneSelector = [[VC_ZoneSelector alloc] init];
         
         [self.view addSubview:zoneSelector.view];
         
     }
     
 
-}
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-
-#pragma mark - View lifecycle
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-*/
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 @end
