@@ -18,12 +18,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     mainView = [[VC_Main alloc] init];
     
-    GamePlayData *data = [[GamePlayData alloc] init];
     
-    NSArray *quizItems = data.quizItems;
     
-    NSLog(@"%@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]);
-
     NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];    
     if ([version isEqualToString:@"1.0.1"] && [PlistFunctions zonesFromPlist] == nil) {
         [PlistFunctions initializeZonePlistWithLockedZones];

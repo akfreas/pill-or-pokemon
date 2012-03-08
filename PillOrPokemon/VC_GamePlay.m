@@ -7,6 +7,8 @@
 //
 
 #import "VC_GamePlay.h"
+#import "GamePlayData.h"
+#import "QuizItem.h"
 
 @implementation VC_GamePlay {
     
@@ -27,17 +29,10 @@
     NSUInteger zone;
     NSUInteger totalNumberOfQuestions;
     
-    NSMutableArray *quizData;
+    GamePlayData *quizData;
     NSMutableArray *incorrectQuizQuestions;
     NSArray *selectionType;
-    NSDictionary *currentQuizItem;
-}
-
--(NSString *)scoreString:(NSInteger)theScore totalPoints:(NSInteger)thePoints {
-    
-    NSString *progress = [NSString stringWithFormat:@"%d/%d", theScore, thePoints];
-    return progress;
-    
+    QuizItem *currentQuizItem;
 }
 
 -(id)initWithZone:(NSInteger)theZone {
@@ -46,21 +41,30 @@
     quizProgressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
 
     incorrectQuizQuestions = [NSMutableArray arrayWithCapacity:0];
+    quizData = [[GamePlayData alloc] initWithZone:theZone];
+    totalNumberOfQuestions = [quizData count];
     return self;
 }
 
 
 
 
+
+-(NSString *)scoreString:(NSInteger)theScore totalPoints:(NSInteger)thePoints {
+    
+    NSString *progress = [NSString stringWithFormat:@"%d/%d", theScore, thePoints];
+    return progress;
+    
+}
+
 -(void)markCorrect {
     score++;
     quizItemLabel.textColor = [UIColor greenColor];
     answerTextLabel.textColor = [UIColor greenColor];
     answerTextLabel.text = @"Correct!";
-    answerDescriptionLabel.text = [currentQuizItem valueForKey:@"description"];
-    
-    [incorrectQuizQuestions addObject:currentQuizItem];
-    
+    answerDescriptionLabel.text = currentQuizItem.itemDescription;
+    currentQuizItem.correct = [NSNumber numberWithBool:YES];
+    [quizData save];
     scoreLabel.text = [self scoreString:score totalPoints:totalNumberOfQuestions];
 }
 
@@ -68,7 +72,9 @@
     quizItemLabel.textColor = [UIColor redColor];
     answerTextLabel.textColor = [UIColor redColor];
     answerTextLabel.text = @"Incorrect.";
-    answerDescriptionLabel.text = [currentQuizItem valueForKey:@"description"];
+    answerDescriptionLabel.text = currentQuizItem.itemDescription;
+    currentQuizItem.correct = [NSNumber numberWithBool:NO];
+    [quizData save];
 }
 
 -(void)moveToNextItem {
@@ -84,8 +90,7 @@
         progressLabel.text = [NSString stringWithFormat:@"%d questions left", questionsRemaining];
 
         
-        currentQuizItem = [quizData objectAtIndex:0];
-        [quizData removeObjectAtIndex:0];
+        currentQuizItem = [quizData quizItemAtIndex:currentQuizItemIndex];
         
         [self configureUIElementsForUnansweredQuestion];
         

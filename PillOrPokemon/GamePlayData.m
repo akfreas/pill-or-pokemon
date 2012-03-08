@@ -15,34 +15,55 @@
     NSManagedObjectContext *managedObjectContext;
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
     NSManagedObjectContext *context;
+    NSArray *quizItemsInZone;
 }
 
 
 
--(id)init {
+-(id)initWithZone:(NSInteger)zone {
     self = [super init];
     
     if (self) {
-        context = [self managedObjectContext];
+        context = [self managedObjectContext];     
+        [self setQuizItemsInZone:zone];
     }
     
     return self;   
 }
 
--(NSArray *)quizItems {
-    
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"QuizItem" 
-                                              inManagedObjectContext:context];
-    [fetchRequest setEntity:entity];
-    NSError *error;
-    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
 
-    return fetchedObjects;
-    
+
+-(QuizItem *)quizItemAtIndex:(NSInteger)index {
+    return [quizItemsInZone objectAtIndex:index];
 }
 
--(NSManagedObjectContext *) managedObjectContext {
+-(NSInteger)count {
+    return [quizItemsInZone count];
+}
+
+-(void)save {
+    NSError *error;
+    [context save:&error];
+}
+
+
+
+-(void)setQuizItemsInZone:(NSInteger)zone {
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"QuizItem" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"gameZone == %d", zone];
+    [fetchRequest setPredicate:predicate];
+    
+    NSError *error;
+
+    quizItemsInZone = [context executeFetchRequest:fetchRequest error:&error];
+}
+
+-(NSManagedObjectContext *)managedObjectContext {
 	
     if (managedObjectContext != nil) {
         return managedObjectContext;
@@ -73,6 +94,7 @@
 	
     NSURL *storeUrl = [[NSBundle mainBundle] URLForResource:@"PillOrPokemonData" withExtension:@"sqlite"];
 	
+    NSLog(@"DB Location: %@", storeUrl);
 	NSError *error = nil;
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {

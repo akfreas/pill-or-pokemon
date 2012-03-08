@@ -31,12 +31,11 @@ for item in lists:
     theType = item[1]
     description = [2]
     vals = []
-    vals.append(i)
     vals.append(0)
     vals.append(item[2])
     vals.append(item[0])
     vals.append(item[1])
-    conn.execute("insert into ZQUIZITEM values(?, 1, 0, ?, ?, ?, ?)", vals)
+    conn.execute("insert into ZQUIZITEM values(?, ?, ?, ?)", vals)
     i+=1
     #Z_PK INTEGER PRIMARY KEY, Z_ENT INTEGER, Z_OPT INTEGER, ZCORRECT INTEGER, ZITEMDESCRIPTION VARCHAR, ZNAME VARCHAR, ZTYPE VARCHAR
 conn.execute("update Z_PRIMARYKEY set Z_MAX=?", [i])

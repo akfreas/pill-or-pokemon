@@ -1,5 +1,9 @@
+@class QuizItem;
 @interface GamePlayData : NSObject
 
--(NSArray *)quizItems;
+-(id)initWithZone:(NSInteger)zone;
+-(QuizItem *)quizItemAtIndex:(NSInteger)index;
+-(NSInteger)count;
+-(void)save;
 
 @end
