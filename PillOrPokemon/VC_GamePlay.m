@@ -10,6 +10,7 @@
 #import "GamePlayData.h"
 #import "QuizItem.h"
 
+
 @implementation VC_GamePlay {
     
     IBOutlet UILabel *quizItemLabel;
@@ -35,6 +36,8 @@
     QuizItem *currentQuizItem;
 }
 
+
+
 -(id)initWithZone:(NSInteger)theZone {
     self = [super initWithNibName:@"GamePlay" bundle:nil];
     zone = theZone;
@@ -43,6 +46,8 @@
     incorrectQuizQuestions = [NSMutableArray arrayWithCapacity:0];
     quizData = [[GamePlayData alloc] initWithZone:theZone];
     totalNumberOfQuestions = [quizData count];
+    selectionType = [[NSArray alloc] initWithObjects:@"pill", @"pokemon", nil];
+    [quizData shuffleQuizData];
     return self;
 }
 
@@ -64,7 +69,6 @@
     answerTextLabel.text = @"Correct!";
     answerDescriptionLabel.text = currentQuizItem.itemDescription;
     currentQuizItem.correct = [NSNumber numberWithBool:YES];
-    [quizData save];
     scoreLabel.text = [self scoreString:score totalPoints:totalNumberOfQuestions];
 }
 
@@ -74,13 +78,11 @@
     answerTextLabel.text = @"Incorrect.";
     answerDescriptionLabel.text = currentQuizItem.itemDescription;
     currentQuizItem.correct = [NSNumber numberWithBool:NO];
-    [quizData save];
 }
 
 -(void)moveToNextItem {
     
-    if([quizData count] > 0) {
-        currentQuizItemIndex++;
+    if([quizData count] > currentQuizItemIndex) {
         float progress = (float)currentQuizItemIndex/(float)totalNumberOfQuestions;
         [quizProgressView setProgress:progress];
         
@@ -95,7 +97,8 @@
         [self configureUIElementsForUnansweredQuestion];
         
         [moveToNextButton setTitle:@"Skip" forState:UIControlStateNormal]; 
-        
+        currentQuizItemIndex++;
+
     } else {
         
         BOOL perfect = NO;
@@ -104,6 +107,7 @@
             perfect = YES;
         }
         [self showEndOfGameMessageWithStatus:perfect];
+        [quizData save];
     }
     
 }
@@ -130,32 +134,16 @@
     [alert show];
 }
 
--(void)shuffleQuizData {
-    
-    static BOOL seeded = NO;
-    if(!seeded)
-    {
-        seeded = YES;
-        srandom(time(NULL));
-    }
-    
-    NSUInteger count = [quizData count];
-    for (NSUInteger i = 0; i < count; ++i) {
-        int nElements = count - i;
-        int n = (random() % nElements) + i;
-        [quizData exchangeObjectAtIndex:i withObjectAtIndex:n];
-    }
-}
+
 
 -(void)setQuizData {
     
     NSString *gameInfoFile = [[NSBundle mainBundle] pathForResource:@"PPData" ofType:@"plist"];
     NSDictionary *temp = [[NSDictionary alloc] initWithContentsOfFile:gameInfoFile];
     selectionType = [[NSArray alloc] initWithObjects:@"pill", @"pokemon", nil];
-    quizData = [NSMutableArray arrayWithArray:[[temp objectForKey:@"Root"] objectAtIndex:zone - 1]];
     totalNumberOfQuestions = [quizData count];
 
-    [self shuffleQuizData];
+    [quizData shuffleQuizData];
 }
 
 -(void)configureUIElementsForUnansweredQuestion {
@@ -212,7 +200,7 @@
     answerDescriptionLabel.hidden = NO;
     NSInteger selection = selectedButton.tag;
     
-    if([[currentQuizItem objectForKey:@"type"] isEqualToString:[selectionType objectAtIndex:selection]]) {
+    if([currentQuizItem.type isEqualToString:[selectionType objectAtIndex:selection]]) {
         
         [self markCorrect];
         

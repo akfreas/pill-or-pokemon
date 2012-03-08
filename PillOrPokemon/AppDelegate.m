@@ -21,8 +21,11 @@
     
     
     NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];    
-    if ([version isEqualToString:@"1.0.1"] && [PlistFunctions zonesFromPlist] == nil) {
-        [PlistFunctions initializeZonePlistWithLockedZones];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
+    if ([version isEqualToString:@"1.0.1"] && [defaults boolForKey:@"hasBeenLaunched"] != YES) {
+        [GamePlayData createDatabaseForFirstUse];
+        [defaults setBool:YES forKey:@"hasBeenLaunched"];
+        [defaults synchronize];
     }   
     self.window.rootViewController = mainView;
     // Override point for customization after application launch.

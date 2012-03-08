@@ -15,7 +15,24 @@
     NSManagedObjectContext *managedObjectContext;
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
     NSManagedObjectContext *context;
-    NSArray *quizItemsInZone;
+    NSMutableArray *quizItemsInZone;
+}
+
+
+
++(void)createDatabaseForFirstUse {
+    
+    NSError *error;
+    NSURL *urlForDbInBundle = [[NSBundle mainBundle] URLForResource:@"PillOrPokemonData" withExtension:@"sqlite"];
+    NSURL *urlForDbInDocuments = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    [urlForDbInDocuments URLByAppendingPathComponent:@"PillOrPokemonData.sqlite"];
+
+    if(![[NSFileManager defaultManager] removeItemAtURL:urlForDbInDocuments error:&error]) {
+        NSLog(@"Error: %@", [error localizedDescription]);
+    }
+    if (![[NSFileManager defaultManager] copyItemAtURL:urlForDbInBundle toURL:urlForDbInDocuments error:&error]) {
+        NSLog(@"Error: %@", [error localizedDescription]);
+    }
 }
 
 
@@ -42,8 +59,28 @@
 }
 
 -(void)save {
+    
     NSError *error;
-    [context save:&error];
+    if(![context save:&error]) {
+        NSLog(@"Error: %@", error);
+    };
+}
+
+-(void)shuffleQuizData {
+    
+    static BOOL seeded = NO;
+    if(!seeded)
+    {
+        seeded = YES;
+        srandom(time(NULL));
+    }
+    
+    NSUInteger count = [quizItemsInZone count];
+    for (NSUInteger i = 0; i < count; ++i) {
+        int nElements = count - i;
+        int n = (random() % nElements) + i;
+        [quizItemsInZone exchangeObjectAtIndex:i withObjectAtIndex:n];
+    }
 }
 
 
@@ -55,12 +92,12 @@
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"QuizItem" inManagedObjectContext:context];
     [fetchRequest setEntity:entity];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"gameZone == %d", zone];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"gameZone == %d AND correct == %d", zone, NO];
     [fetchRequest setPredicate:predicate];
     
     NSError *error;
 
-    quizItemsInZone = [context executeFetchRequest:fetchRequest error:&error];
+    quizItemsInZone = [NSMutableArray arrayWithArray:[context executeFetchRequest:fetchRequest error:&error]];
 }
 
 -(NSManagedObjectContext *)managedObjectContext {
@@ -92,7 +129,8 @@
         return persistentStoreCoordinator;
     }
 	
-    NSURL *storeUrl = [[NSBundle mainBundle] URLForResource:@"PillOrPokemonData" withExtension:@"sqlite"];
+    NSURL *storeUrl = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    [storeUrl URLByAppendingPathComponent:@"PillOrPokemonData.sqlite"];
 	
     NSLog(@"DB Location: %@", storeUrl);
 	NSError *error = nil;
