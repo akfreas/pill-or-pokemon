@@ -21,9 +21,9 @@
     NSLog(@"%@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]);
 
     NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];    
-    NSLog(@"Zones: %@", [VC_ZoneSelector zonesFromPlist]);
-    if ([version isEqualToString:@"1.0.1"] && [VC_ZoneSelector zonesFromPlist] == nil) {
-        [VC_ZoneSelector initializeZonePlistWithLockedZones];
+    NSLog(@"Zones: %@", [PlistFunctions zonesFromPlist]);
+    if ([version isEqualToString:@"1.0.1"] && [PlistFunctions zonesFromPlist] == nil) {
+        [PlistFunctions initializeZonePlistWithLockedZones];
     }
     self.window.rootViewController = mainView;
     // Override point for customization after application launch.

@@ -11,54 +11,6 @@
 @implementation VC_ZoneSelector
 
 
-+(NSURL *)documentsUrl {
-    
-    NSURL *unlockedZonesPlistUrl = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-    unlockedZonesPlistUrl = [unlockedZonesPlistUrl URLByAppendingPathComponent:@"Scores.plist"];
-    return unlockedZonesPlistUrl;
-}
-
-+(NSMutableArray *)zonesFromPlist {
-    
-    NSURL *unlockedZonesPlistUrl = [VC_ZoneSelector documentsUrl];
-    NSMutableArray *zones = [[NSDictionary dictionaryWithContentsOfURL:unlockedZonesPlistUrl] objectForKey:@"zones"];
-    return zones;
-}
-
-+(void)unlockZoneInPlist:(NSNumber *)zone {
-    
-    NSMutableArray *zones = [VC_ZoneSelector zonesFromPlist];
-    [zones replaceObjectAtIndex:[zone intValue] withObject:@"unlocked"];
-    [VC_ZoneSelector saveZones:zones];
-}
-
-+(void)initializeZonePlistWithLockedZones {
-    
-    NSMutableArray *zones = [NSMutableArray arrayWithCapacity:4];
-    [zones addObject:@"unlocked"];
-    for (int i=1; i<4; i++) {
-        [zones addObject:@"locked"];
-    }
-    
-    [VC_ZoneSelector saveZones:zones];
-}
-
-+(void)initializeZonePlistWithUnlockedZones {
-    
-    NSMutableArray *zones =  [NSMutableArray arrayWithCapacity:4];
-    for (int i=0; i<4; i++) {
-        [zones addObject:@"unlocked"];
-    }
-
-    [VC_ZoneSelector saveZones:zones];
-}
-
-+(void)saveZones:(NSMutableArray *)zones {
-    
-    NSURL *plistUrl = [self documentsUrl];
-    NSDictionary *zoneDict = [NSDictionary dictionaryWithObject:zones forKey:@"zones"];
-    [zoneDict writeToURL:plistUrl atomically:YES];
-}
 
 -(id)init {
     self = [super initWithNibName:@"ZoneSelector" bundle:[NSBundle mainBundle]];
@@ -87,7 +39,7 @@
 
 -(void)configureZoneViewsWithPlist {
 
-    NSArray *zones = [NSArray arrayWithArray:[VC_ZoneSelector zonesFromPlist]];
+    NSArray *zones = [NSArray arrayWithArray:[PlistFunctions zonesFromPlist]];
     
     if(zones != nil) {
         

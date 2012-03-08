@@ -8,7 +8,7 @@
 
 #import "VC_GamePlay.h"
 
-@interface VC_GamePlay () {
+@implementation VC_GamePlay {
     
     IBOutlet UILabel *quizItemLabel;
     IBOutlet UILabel *answerTextLabel;
@@ -28,17 +28,10 @@
     NSUInteger totalNumberOfQuestions;
     
     NSMutableArray *quizData;
+    NSMutableArray *incorrectQuizQuestions;
     NSArray *selectionType;
     NSDictionary *currentQuizItem;
-    
-
-
 }
-
--(void)resetGame;
-@end
-
-@implementation VC_GamePlay
 
 -(NSString *)scoreString:(NSInteger)theScore totalPoints:(NSInteger)thePoints {
     
@@ -51,6 +44,8 @@
     self = [super initWithNibName:@"GamePlay" bundle:nil];
     zone = theZone;
     quizProgressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
+
+    incorrectQuizQuestions = [NSMutableArray arrayWithCapacity:0];
     return self;
 }
 
@@ -63,8 +58,10 @@
     answerTextLabel.textColor = [UIColor greenColor];
     answerTextLabel.text = @"Correct!";
     answerDescriptionLabel.text = [currentQuizItem valueForKey:@"description"];
+    
+    [incorrectQuizQuestions addObject:currentQuizItem];
+    
     scoreLabel.text = [self scoreString:score totalPoints:totalNumberOfQuestions];
-
 }
 
 -(void)markIncorrect {
@@ -90,14 +87,7 @@
         currentQuizItem = [quizData objectAtIndex:0];
         [quizData removeObjectAtIndex:0];
         
-        quizItemLabel.text = [currentQuizItem valueForKey:@"name"];
-        quizItemLabel.textColor = [UIColor whiteColor];
-        answerTextLabel.hidden = YES;
-        answerTextLabel.textColor = [UIColor whiteColor];
-        answerDescriptionLabel.textColor = [UIColor whiteColor];
-        answerDescriptionLabel.hidden = YES;
-        pillButton.hidden = NO;
-        pokeButton.hidden = NO;
+        [self configureUIElementsForUnansweredQuestion];
         
         [moveToNextButton setTitle:@"Skip" forState:UIControlStateNormal]; 
         
@@ -120,7 +110,7 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Results"
                                                     message: @""
                                                    delegate: self
-                                          cancelButtonTitle: @"Sweet!"
+                                          cancelButtonTitle: @"Main Menu"
                                           otherButtonTitles: nil];
     if (perfect) {
         endOfGameMessage = [[NSString alloc] initWithString: @"Congratulations! You got a perfect score and have unlocked the next zone!"];
@@ -152,28 +142,42 @@
     }
 }
 
--(void)resetGame {
+-(void)setQuizData {
     
-    currentQuizItemIndex = 0;
-    score = 0;
     NSString *gameInfoFile = [[NSBundle mainBundle] pathForResource:@"PPData" ofType:@"plist"];
     NSDictionary *temp = [[NSDictionary alloc] initWithContentsOfFile:gameInfoFile];
     selectionType = [[NSArray alloc] initWithObjects:@"pill", @"pokemon", nil];
     quizData = [NSMutableArray arrayWithArray:[[temp objectForKey:@"Root"] objectAtIndex:zone - 1]];
-    [self shuffleQuizData];
     totalNumberOfQuestions = [quizData count];
+
+    [self shuffleQuizData];
+}
+
+-(void)configureUIElementsForUnansweredQuestion {
+    
     quizItemLabel.text = [currentQuizItem valueForKey:@"name"];
     quizItemLabel.textColor = [UIColor whiteColor];
+    
     answerTextLabel.hidden = YES;
     answerTextLabel.textColor = [UIColor whiteColor];
+    
     answerDescriptionLabel.textColor = [UIColor whiteColor];
     answerDescriptionLabel.hidden = YES;
+    
     pillButton.hidden = NO;
     pokeButton.hidden = NO;
     
     scoreLabel.text = [self scoreString:score totalPoints:totalNumberOfQuestions];
+}
 
+-(void)resetGame {
     
+    [self setQuizData];
+    [self configureUIElementsForUnansweredQuestion];
+    
+    currentQuizItemIndex = 0;
+    score = 0;
+  
     [moveToNextButton setTitle:@"Skip" forState:UIControlStateNormal];   
     [self moveToNextItem];
 }

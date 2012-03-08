@@ -8,11 +8,6 @@
     
 }
 
-+(NSURL *)documentsUrl;
-+(NSMutableArray *)zonesFromPlist;
-+(void)unlockZoneInPlist:(NSNumber *)zone;
-+(void)initializeZonePlistWithLockedZones;
-+(void)initializeZonePlistWithUnlockedZones;
 -(IBAction)zoneSelected:(id)sender;
 
 @end
