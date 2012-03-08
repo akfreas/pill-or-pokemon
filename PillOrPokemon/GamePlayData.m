@@ -9,6 +9,8 @@
 #import "GamePlayData.h"
 #import "QuizItem.h"
 
+static GamePlayData *gamePlayData;
+
 @implementation GamePlayData {
     
     NSManagedObjectModel *managedObjectModel;
@@ -17,6 +19,17 @@
     NSManagedObjectContext *context;
     NSMutableArray *quizItemsInZone;
 }
+
+
++(GamePlayData *)sharedInstance {
+    
+    static BOOL initialized = NO;
+    if (!initialized) {
+        gamePlayData = [[self alloc] init];
+    }
+    return gamePlayData;
+}
+
 
 
 
@@ -37,7 +50,9 @@
 
 
 
--(id)initWithZone:(NSInteger)zone {
+
+
+-(id)init {
     self = [super init];
     
     if (self) {
@@ -83,7 +98,9 @@
     }
 }
 
-
+-(void)setZone:(NSInteger)zone {
+    [gamePlayData setQuizItemsInZone:zone];
+}
 
 -(void)setQuizItemsInZone:(NSInteger)zone {
     
