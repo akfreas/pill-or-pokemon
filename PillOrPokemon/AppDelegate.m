@@ -17,7 +17,14 @@
 {    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     mainView = [[VC_Main alloc] init];
+    
+    NSLog(@"%@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]);
 
+    NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];    
+    NSLog(@"Zones: %@", [VC_ZoneSelector zonesFromPlist]);
+    if ([version isEqualToString:@"1.0.1"] && [VC_ZoneSelector zonesFromPlist] == nil) {
+        [VC_ZoneSelector initializeZonePlistWithLockedZones];
+    }
     self.window.rootViewController = mainView;
     // Override point for customization after application launch.
     //self.window.backgroundColor = [UIColor whiteColor];

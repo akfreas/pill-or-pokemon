@@ -102,29 +102,37 @@
         [moveToNextButton setTitle:@"Skip" forState:UIControlStateNormal]; 
         
     } else {
-        NSString *endOfGameMessage;
-        if(score == totalNumberOfQuestions) {
-            
-            endOfGameMessage = [[NSString alloc] initWithString: @"Congratulations! You got a perfect score and have unlocked the next zone!"];
-            
-            NSString *pathToZonePlist = [[NSBundle mainBundle] pathForResource:@"UnlockedZones" ofType:@"plist"];
-            NSMutableArray *unlockedZones = [NSArray arrayWithContentsOfFile:pathToZonePlist];
-            NSNumber *isUnlocked = [NSNumber numberWithBool:YES];
-            [unlockedZones replaceObjectAtIndex:zone withObject:isUnlocked];
-            [unlockedZones writeToFile:pathToZonePlist atomically:YES];
-            
-        } else {
         
-            endOfGameMessage = [[NSString alloc] initWithFormat: @"Your score was %d out of %d.", score, totalNumberOfQuestions];
+        BOOL perfect = NO;
+        
+        if (totalNumberOfQuestions == score) {
+            perfect = YES;
         }
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Results"
-                                                        message: endOfGameMessage
-                                                       delegate: self
-                                              cancelButtonTitle: @"Sweet!"
-                                              otherButtonTitles: nil];
-        [alert show];
+        [self showEndOfGameMessageWithStatus:perfect];
     }
     
+}
+
+-(void)showEndOfGameMessageWithStatus:(BOOL)perfect {
+
+    NSString *endOfGameMessage;
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Results"
+                                                    message: @""
+                                                   delegate: self
+                                          cancelButtonTitle: @"Sweet!"
+                                          otherButtonTitles: nil];
+    if (perfect) {
+        endOfGameMessage = [[NSString alloc] initWithString: @"Congratulations! You got a perfect score and have unlocked the next zone!"];
+        [alert addButtonWithTitle:@"Proceed to next zone"];
+    } else {
+        endOfGameMessage = [[NSString alloc] initWithFormat: @"Your score was %d out of %d. Play again to get a perfect score and unlock the next level!", score, totalNumberOfQuestions];
+        [alert addButtonWithTitle:@"Play again"];
+    }
+    
+    alert.message = endOfGameMessage;
+    
+    [alert show];
 }
 
 -(void)shuffleQuizData {

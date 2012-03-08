@@ -11,6 +11,55 @@
 @implementation VC_ZoneSelector
 
 
++(NSURL *)documentsUrl {
+    
+    NSURL *unlockedZonesPlistUrl = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    unlockedZonesPlistUrl = [unlockedZonesPlistUrl URLByAppendingPathComponent:@"Scores.plist"];
+    return unlockedZonesPlistUrl;
+}
+
++(NSMutableArray *)zonesFromPlist {
+    
+    NSURL *unlockedZonesPlistUrl = [VC_ZoneSelector documentsUrl];
+    NSMutableArray *zones = [[NSDictionary dictionaryWithContentsOfURL:unlockedZonesPlistUrl] objectForKey:@"zones"];
+    return zones;
+}
+
++(void)unlockZoneInPlist:(NSNumber *)zone {
+    
+    NSMutableArray *zones = [VC_ZoneSelector zonesFromPlist];
+    [zones replaceObjectAtIndex:[zone intValue] withObject:@"unlocked"];
+    [VC_ZoneSelector saveZones:zones];
+}
+
++(void)initializeZonePlistWithLockedZones {
+    
+    NSMutableArray *zones = [NSMutableArray arrayWithCapacity:4];
+    [zones addObject:@"unlocked"];
+    for (int i=1; i<4; i++) {
+        [zones addObject:@"locked"];
+    }
+    
+    [VC_ZoneSelector saveZones:zones];
+}
+
++(void)initializeZonePlistWithUnlockedZones {
+    
+    NSMutableArray *zones =  [NSMutableArray arrayWithCapacity:4];
+    for (int i=0; i<4; i++) {
+        [zones addObject:@"unlocked"];
+    }
+
+    [VC_ZoneSelector saveZones:zones];
+}
+
++(void)saveZones:(NSMutableArray *)zones {
+    
+    NSURL *plistUrl = [self documentsUrl];
+    NSDictionary *zoneDict = [NSDictionary dictionaryWithObject:zones forKey:@"zones"];
+    [zoneDict writeToURL:plistUrl atomically:YES];
+}
+
 -(id)init {
     self = [super initWithNibName:@"ZoneSelector" bundle:[NSBundle mainBundle]];
     return self;
@@ -34,39 +83,26 @@
 
 }
 
--(NSURL *)documentsUrl {
-    
-    NSURL *unlockedZonesPlistUrl = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-    unlockedZonesPlistUrl = [unlockedZonesPlistUrl URLByAppendingPathComponent:@"Scores.plist"];
-    return unlockedZonesPlistUrl;
-}
 
--(NSMutableArray *)unlockedZonesFromPlist {
-
-    NSURL *unlockedZonesPlistUrl = [self documentsUrl];
-    NSMutableArray *zones = [[NSDictionary dictionaryWithContentsOfURL:unlockedZonesPlistUrl] objectForKey:@"array"];
-    return zones;
-}
-
--(void)unlockZoneInPlist:(NSNumber *)zone {
-    
-    NSURL *unlockedZonesPlistUrl = [self documentsUrl];
-    NSMutableArray *zones = [[NSDictionary dictionaryWithContentsOfURL:unlockedZonesPlistUrl] objectForKey:@"array"];
-    [zones replaceObjectAtIndex:[zone intValue] withObject:@"unlocked"];
-}
 
 -(void)configureZoneViewsWithPlist {
 
-    NSString *pathToScorePlist = [[NSBundle mainBundle] pathForResource:@"UnlockedZones" ofType:@"plist"];
-    NSArray *scoreArray = [[NSDictionary dictionaryWithContentsOfFile:pathToScorePlist] objectForKey:@"Zones"];
+    NSArray *zones = [NSArray arrayWithArray:[VC_ZoneSelector zonesFromPlist]];
     
-    
-    if(scoreArray != nil) {
+    if(zones != nil) {
         
-        for(int i=0; i<[scoreArray count]; i++) {
-            
+        for(int i=0; i<[zones count]; i++) {
             UIImageView *imageView = (UIImageView *)[self.view viewWithTag:i + 1];
-            imageView.alpha = [[scoreArray objectAtIndex:i] floatValue]; // == YES ? 1 : 0;
+            
+            if ([[zones objectAtIndex:i] isEqualToString:@"unlocked"]) {                
+                imageView.alpha = 1;
+                imageView.userInteractionEnabled = YES;
+                
+            } else {
+                imageView.alpha = .25;
+                imageView.userInteractionEnabled = NO;
+                
+            }
         }
     }
 }

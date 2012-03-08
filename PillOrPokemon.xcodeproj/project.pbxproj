@@ -628,6 +628,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_TARGET_FREE = 0;
+				CURRENT_PROJECT_VERSION = 1.1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PillOrPokemon/PillOrPokemon-Prefix.pch";
 				INFOPLIST_FILE = "PillOrPokemon/PillOrPokemon-Info.plist";
@@ -640,6 +641,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_TARGET_FREE = 0;
+				CURRENT_PROJECT_VERSION = 1.1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PillOrPokemon/PillOrPokemon-Prefix.pch";
 				INFOPLIST_FILE = "PillOrPokemon/PillOrPokemon-Info.plist";
