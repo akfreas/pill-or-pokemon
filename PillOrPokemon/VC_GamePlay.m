@@ -13,6 +13,8 @@
     IBOutlet UILabel *quizItemLabel;
     IBOutlet UILabel *answerTextLabel;
     IBOutlet UILabel *answerDescriptionLabel;
+    IBOutlet UILabel *scoreLabel;
+    IBOutlet UILabel *progressLabel;
     
     IBOutlet UIButton *moveToNextButton;
     IBOutlet UIButton *pillButton;
@@ -28,21 +30,31 @@
     NSMutableArray *quizData;
     NSArray *selectionType;
     NSDictionary *currentQuizItem;
+    
 
 
 }
+
 -(void)resetGame;
 @end
 
 @implementation VC_GamePlay
 
+-(NSString *)scoreString:(NSInteger)theScore totalPoints:(NSInteger)thePoints {
+    
+    NSString *progress = [NSString stringWithFormat:@"%d/%d", theScore, thePoints];
+    return progress;
+    
+}
+
 -(id)initWithZone:(NSInteger)theZone {
     self = [super initWithNibName:@"GamePlay" bundle:nil];
     zone = theZone;
-    return self;
     quizProgressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
-    
+    return self;
 }
+
+
 
 
 -(void)markCorrect {
@@ -51,6 +63,8 @@
     answerTextLabel.textColor = [UIColor greenColor];
     answerTextLabel.text = @"Correct!";
     answerDescriptionLabel.text = [currentQuizItem valueForKey:@"description"];
+    scoreLabel.text = [self scoreString:score totalPoints:totalNumberOfQuestions];
+
 }
 
 -(void)markIncorrect {
@@ -66,6 +80,13 @@
         currentQuizItemIndex++;
         float progress = (float)currentQuizItemIndex/(float)totalNumberOfQuestions;
         [quizProgressView setProgress:progress];
+        
+        
+        NSInteger questionsRemaining = totalNumberOfQuestions - currentQuizItemIndex;
+        
+        progressLabel.text = [NSString stringWithFormat:@"%d questions left", questionsRemaining];
+
+        
         currentQuizItem = [quizData objectAtIndex:0];
         [quizData removeObjectAtIndex:0];
         
@@ -81,10 +102,23 @@
         [moveToNextButton setTitle:@"Skip" forState:UIControlStateNormal]; 
         
     } else {
+        NSString *endOfGameMessage;
+        if(score == totalNumberOfQuestions) {
+            
+            endOfGameMessage = [[NSString alloc] initWithString: @"Congratulations! You got a perfect score and have unlocked the next zone!"];
+            
+            NSString *pathToZonePlist = [[NSBundle mainBundle] pathForResource:@"UnlockedZones" ofType:@"plist"];
+            NSMutableArray *unlockedZones = [NSArray arrayWithContentsOfFile:pathToZonePlist];
+            NSNumber *isUnlocked = [NSNumber numberWithBool:YES];
+            [unlockedZones replaceObjectAtIndex:zone withObject:isUnlocked];
+            [unlockedZones writeToFile:pathToZonePlist atomically:YES];
+            
+        } else {
         
-        NSString *endOfGameData = [[NSString alloc] initWithFormat: @"Your score was %d out of %d.", score, totalNumberOfQuestions];
+            endOfGameMessage = [[NSString alloc] initWithFormat: @"Your score was %d out of %d.", score, totalNumberOfQuestions];
+        }
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Results"
-                                                        message: endOfGameData
+                                                        message: endOfGameMessage
                                                        delegate: self
                                               cancelButtonTitle: @"Sweet!"
                                               otherButtonTitles: nil];
@@ -104,7 +138,6 @@
     
     NSUInteger count = [quizData count];
     for (NSUInteger i = 0; i < count; ++i) {
-        // Select a random element between i and end of array to swap with.
         int nElements = count - i;
         int n = (random() % nElements) + i;
         [quizData exchangeObjectAtIndex:i withObjectAtIndex:n];
@@ -129,6 +162,9 @@
     answerDescriptionLabel.hidden = YES;
     pillButton.hidden = NO;
     pokeButton.hidden = NO;
+    
+    scoreLabel.text = [self scoreString:score totalPoints:totalNumberOfQuestions];
+
     
     [moveToNextButton setTitle:@"Skip" forState:UIControlStateNormal];   
     [self moveToNextItem];

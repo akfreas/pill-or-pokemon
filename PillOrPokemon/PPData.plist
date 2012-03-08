@@ -1,161 +1,161 @@
 <dict><key>Root</key><array><array><dict>
- <key>name</key> <string>Colcrys</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reducer</string> </dict><dict>
- <key>name</key> <string>Gemzar</string> <key>type</key> <string>pill</string> <key>description</key> <string>cancer medication</string> </dict><dict>
- <key>name</key> <string>Zyvox</string> <key>type</key> <string>pill</string> <key>description</key> <string>antibacteria</string> </dict><dict>
- <key>name</key> <string>Crestor</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to help lower cholesterol</string> </dict><dict>
- <key>name</key> <string>Luxio</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#404, 4th generation, Electric</string> </dict><dict>
- <key>name</key> <string>Quinidine</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug to treat heart rhythm disorders</string> </dict><dict>
- <key>name</key> <string>Maractus</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#556, 5th generation, Grass</string> </dict><dict>
- <key>name</key> <string>Xanax</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug to treat anxiety disorders, panic disorders and depression</string> </dict><dict>
- <key>name</key> <string>Reuniclus</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#579, 5th generation, Psychic</string> </dict><dict>
- <key>name</key> <string>RotaTeq</string> <key>type</key> <string>pill</string> <key>description</key> <string>vaccine for the rotavirus </string> </dict><dict>
- <key>name</key> <string>Lutera</string> <key>type</key> <string>pill</string> <key>description</key> <string>contraceptive</string> </dict><dict>
- <key>name</key> <string>Espeon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#196, 2nd generation, Psychic</string> </dict><dict>
- <key>name</key> <string>Tepig</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#498, 5th generation, Fire</string> </dict><dict>
- <key>name</key> <string>Rhydon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#112, 1st generation, Ground Rock</string> </dict><dict>
- <key>name</key> <string>Fraxure</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#611, 5th generation, Dragon</string> </dict><dict>
- <key>name</key> <string>Navane</string> <key>type</key> <string>pill</string> <key>description</key> <string>schizophrenia medication</string> </dict><dict>
- <key>name</key> <string>IvyStat</string> <key>type</key> <string>pill</string> <key>description</key> <string>rash treatment medication</string> </dict><dict>
- <key>name</key> <string>Vibrava</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#329, 3rd generation, Ground Dragod</string> </dict><dict>
- <key>name</key> <string>Gleevec</string> <key>type</key> <string>pill</string> <key>description</key> <string>leukemia medication</string> </dict><dict>
- <key>name</key> <string>Beedrill</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#015, 1st generation, Bug Poison</string> </dict><dict>
- <key>name</key> <string>Vanatrip</string> <key>type</key> <string>pill</string> <key>description</key> <string>antidepressant</string> </dict><dict>
- <key>name</key> <string>Marill</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#183, 2nd generation, Water</string> </dict><dict>
- <key>name</key> <string>Renagel</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat low levels of calcium</string> </dict><dict>
- <key>name</key> <string>Remoraid</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#223, 2nd generation, Water</string> </dict><dict>
- <key>name</key> <string>Omastar</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#139, 1st generation, Rock Water</string> </dict><dict>
- <key>name</key> <string>Elgyem</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#605, 5th generation, Psychic</string> </dict><dict>
- <key>name</key> <string>Briellyn</string> <key>type</key> <string>pill</string> <key>description</key> <string>contraceptive</string> </dict><dict>
- <key>name</key> <string>Moltres</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#146, 1st generation, Fire Flying</string> </dict><dict>
- <key>name</key> <string>Nadolol</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug to help blood flow</string> </dict><dict>
- <key>name</key> <string>Geodon</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat schizophrenia</string> </dict><dict>
- <key>name</key> <string>Cryogonal</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#615, 5th generation, Ice</string> </dict><dict>
- <key>name</key> <string>Milotic</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#350, 3rd generation, Water</string> </dict><dict>
- <key>name</key> <string>Azumarill</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#184, 2nd generation, Water</string> </dict><dict>
- <key>name</key> <string>Vivarin</string> <key>type</key> <string>pill</string> <key>description</key> <string>brand name for caffeine</string> </dict><dict>
- <key>name</key> <string>Rhyperior</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#464, 4th generation, Ground Rock</string> </dict><dict>
- <key>name</key> <string>Vitoxapap</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reliever and fever reducer</string> </dict><dict>
- <key>name</key> <string>Meloetta</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#648, 5th generation, Normal Psychic Fighting</string> </dict><dict>
- <key>name</key> <string>Keppra</string> <key>type</key> <string>pill</string> <key>description</key> <string>epilepsy/seizure treatment medication</string> </dict><dict>
- <key>name</key> <string>Accelgor</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#617, 5th generation, Bug</string> </dict><dict>
- <key>name</key> <string>Daliresp</string> <key>type</key> <string>pill</string> <key>description</key> <string>inflammation reducer</string> </dict></array><array><dict>
- <key>name</key> <string>Petilil</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#548, 5th generation, Grass</string> </dict><dict>
- <key>name</key> <string>Gliscor</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#472, 4th generation, Ground Flying</string> </dict><dict>
- <key>name</key> <string>Econochlor</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication for serious infections</string> </dict><dict>
- <key>name</key> <string>Basculin</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#550, 5th generation, Water</string> </dict><dict>
- <key>name</key> <string>Metang</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#375, 3rd generation, Steel Psychic</string> </dict><dict>
- <key>name</key> <string>Azor</string> <key>type</key> <string>pill</string> <key>description</key> <string>muscle relaxer</string> </dict><dict>
- <key>name</key> <string>Absol</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#359, 3rd generation, Dark</string> </dict><dict>
- <key>name</key> <string>Jalyn</string> <key>type</key> <string>pill</string> <key>description</key> <string>muscle relaxer</string> </dict><dict>
- <key>name</key> <string>Lumineon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#457, 4th generation, Water</string> </dict><dict>
- <key>name</key> <string>Vaporeon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#134, 1st generation, Water</string> </dict><dict>
- <key>name</key> <string>Lugia</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#249, 2nd generation, Psychic Flying</string> </dict><dict>
- <key>name</key> <string>Blocadren</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication for high blood pressure</string> </dict><dict>
- <key>name</key> <string>Munchlax</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#446, 4th generation, Normal</string> </dict><dict>
- <key>name</key> <string>Shinx</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#403, 4th generation, Electric</string> </dict><dict>
- <key>name</key> <string>Aviane</string> <key>type</key> <string>pill</string> <key>description</key> <string>contraceptive</string> </dict><dict>
- <key>name</key> <string>Gligar</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#207, 2nd generation, Ground Flying</string> </dict><dict>
- <key>name</key> <string>Bronzor</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#436, 4th generation, Steel Psychic</string> </dict><dict>
- <key>name</key> <string>Gammagard</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat deficiencies in the immune system</string> </dict><dict>
- <key>name</key> <string>Bonsly</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#438, 4th generation, Rock</string> </dict><dict>
- <key>name</key> <string>Rayquaza</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#384, 3rd generation, Dragon Flying</string> </dict><dict>
- <key>name</key> <string>Deino</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#633, 5th generation, Dark Dragon</string> </dict><dict>
- <key>name</key> <string>Hycort</string> <key>type</key> <string>pill</string> <key>description</key> <string>inflammation reducer</string> </dict><dict>
- <key>name</key> <string>Virizion</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#640, 5th generation, Grass Fighting</string> </dict><dict>
- <key>name</key> <string>Zeasorb</string> <key>type</key> <string>pill</string> <key>description</key> <string>athlete's foot treatment medication</string> </dict><dict>
- <key>name</key> <string>Ledian</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#166, 2nd generation, Bug Flying</string> </dict><dict>
  <key>name</key> <string>Zebstrika</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#523, 5th generation, Electric</string> </dict><dict>
- <key>name</key> <string>Merrem</string> <key>type</key> <string>pill</string> <key>description</key> <string>antibacteria for the abdomen</string> </dict><dict>
- <key>name</key> <string>Ifex</string> <key>type</key> <string>pill</string> <key>description</key> <string>cancer medication</string> </dict><dict>
- <key>name</key> <string>Carnitor</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication for metabolism disorders</string> </dict><dict>
- <key>name</key> <string>Clasteon</string> <key>type</key> <string>pill</string> <key>description</key> <string>cancer medication</string> </dict><dict>
- <key>name</key> <string>Aranesp</string> <key>type</key> <string>pill</string> <key>description</key> <string>artificial protein to protect red blood cells</string> </dict><dict>
- <key>name</key> <string>Illumise</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#314, 3rd generation, Bug</string> </dict><dict>
- <key>name</key> <string>Grovyle</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#253, 3rd generation, Grass</string> </dict><dict>
- <key>name</key> <string>Finneon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#456, 4th generation, Water</string> </dict><dict>
- <key>name</key> <string>Iplex</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication for growth failure</string> </dict><dict>
- <key>name</key> <string>Decadron</string> <key>type</key> <string>pill</string> <key>description</key> <string>inflammation reducer for athsma treatment</string> </dict><dict>
- <key>name</key> <string>Urso</string> <key>type</key> <string>pill</string> <key>description</key> <string>acid to decrease cholesterol</string> </dict><dict>
- <key>name</key> <string>Solosis</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#577, 5th generation, Psychic</string> </dict><dict>
- <key>name</key> <string>Maxalt</string> <key>type</key> <string>pill</string> <key>description</key> <string>medicine to treat headaches</string> </dict><dict>
- <key>name</key> <string>Hytrin</string> <key>type</key> <string>pill</string> <key>description</key> <string>muscle relaxer</string> </dict></array><array><dict>
- <key>name</key> <string>Spinarak</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#167, 2nd generation, Bug Poison</string> </dict><dict>
- <key>name</key> <string>Tygacil</string> <key>type</key> <string>pill</string> <key>description</key> <string>antibacteria</string> </dict><dict>
- <key>name</key> <string>Ranexa</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat chronic chest pain</string> </dict><dict>
- <key>name</key> <string>Voltaren</string> <key>type</key> <string>pill</string> <key>description</key> <string>anti inflammatory drug</string> </dict><dict>
- <key>name</key> <string>Sinemet</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat Parkinson's disease</string> </dict><dict>
- <key>name</key> <string>Deoxys</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#386, 3rd generation, Psychic</string> </dict><dict>
- <key>name</key> <string>Proglycem</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug used to raise blood sugar</string> </dict><dict>
- <key>name</key> <string>Luxiq</string> <key>type</key> <string>pill</string> <key>description</key> <string>steroid to prevent inflammation</string> </dict><dict>
- <key>name</key> <string>Servine</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#496, 5th generation, Grass</string> </dict><dict>
- <key>name</key> <string>Escavalier</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#589, 5th generation, Bug Steel</string> </dict><dict>
- <key>name</key> <string>Azurill</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#298, 3rd generation, Normal</string> </dict><dict>
- <key>name</key> <string>Fareston</string> <key>type</key> <string>pill</string> <key>description</key> <string>breast cancer medication</string> </dict><dict>
- <key>name</key> <string>Banzel</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication used to treat epilepsy</string> </dict><dict>
- <key>name</key> <string>Gastrodon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#423, 4th generation, Water Ground</string> </dict><dict>
- <key>name</key> <string>Rescriptor</string> <key>type</key> <string>pill</string> <key>description</key> <string>HIV medication</string> </dict><dict>
- <key>name</key> <string>Xigris</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug to treat sepsis</string> </dict><dict>
- <key>name</key> <string>Marowak</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#105, 1st generation, Ground</string> </dict><dict>
- <key>name</key> <string>Glaceon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#471, 4th generation, Ice</string> </dict><dict>
- <key>name</key> <string>Mesprit</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#481, 4th generation, Psychic</string> </dict><dict>
- <key>name</key> <string>Dolotic</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reliever for the ear</string> </dict><dict>
- <key>name</key> <string>Tauros</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#128, 1st generation, Normal</string> </dict><dict>
- <key>name</key> <string>Bibarel</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#400, 4th generation, Normal Water</string> </dict><dict>
- <key>name</key> <string>Hyperrab</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug used to treat rabies</string> </dict><dict>
- <key>name</key> <string>Abraxane</string> <key>type</key> <string>pill</string> <key>description</key> <string>a cancer medication</string> </dict><dict>
- <key>name</key> <string>Abacavir</string> <key>type</key> <string>pill</string> <key>description</key> <string>antiviral medication to treat HIV</string> </dict><dict>
- <key>name</key> <string>Jantoven</string> <key>type</key> <string>pill</string> <key>description</key> <string>blood thinner to prevent heart attacks</string> </dict><dict>
- <key>name</key> <string>Sanctura</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat urinary incontinence </string> </dict><dict>
- <key>name</key> <string>Voltorb</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#100, 1st generation, Electric</string> </dict><dict>
- <key>name</key> <string>Xibrom</string> <key>type</key> <string>pill</string> <key>description</key> <string>antiinflammatory drug</string> </dict><dict>
- <key>name</key> <string>Excadrill</string> <key>type</key> <string>pokemon</string> <key>description</key> <string> #530, 5th generation, Ground Steel</string> </dict><dict>
- <key>name</key> <string>Rozerem</string> <key>type</key> <string>pill</string> <key>description</key> <string>sedative to treat wake cycle disorders</string> </dict><dict>
- <key>name</key> <string>Lunatone</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#337, 3rd generation, Rock Psychic</string> </dict><dict>
- <key>name</key> <string>Sentret</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#161, 2nd generation, Normal</string> </dict><dict>
- <key>name</key> <string>Geref</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat growth hormone deficiency in children</string> </dict><dict>
- <key>name</key> <string>Shaymin</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#492, 4th generation, Grass Flying</string> </dict><dict>
- <key>name</key> <string>Altaria</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#334, 3rd generation, Dragon Flying</string> </dict><dict>
- <key>name</key> <string>Aipom</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#190, 2nd generation, Normal</string> </dict><dict>
- <key>name</key> <string>Fuzeon</string> <key>type</key> <string>pill</string> <key>description</key> <string>HIV medication</string> </dict><dict>
- <key>name</key> <string>Mentax</string> <key>type</key> <string>pill</string> <key>description</key> <string>antifungus medication</string> </dict><dict>
- <key>name</key> <string>Mylotarg</string> <key>type</key> <string>pill</string> <key>description</key> <string>cancer medication</string> </dict></array><array><dict>
- <key>name</key> <string>Protonix</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to lower stomach acid production</string> </dict><dict>
- <key>name</key> <string>Zomig</string> <key>type</key> <string>pill</string> <key>description</key> <string>headache medicine</string> </dict><dict>
- <key>name</key> <string>Heatran</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#485, 4th generation, Fire Steel</string> </dict><dict>
- <key>name</key> <string>Doribax</string> <key>type</key> <string>pill</string> <key>description</key> <string>antibacteria for the stomach</string> </dict><dict>
- <key>name</key> <string>Aceon</string> <key>type</key> <string>pill</string> <key>description</key> <string>ACE inhibitor for high blood pressure</string> </dict><dict>
- <key>name</key> <string>Nalfon</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reliever</string> </dict><dict>
- <key>name</key> <string>Kecleon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#352, 3rd generation, Normal</string> </dict><dict>
- <key>name</key> <string>Cleffa</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#173, 2nd generation, Normal</string> </dict><dict>
- <key>name</key> <string>Volcarona</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#637, 5th generation, Bug Fire</string> </dict><dict>
- <key>name</key> <string>Elocon</string> <key>type</key> <string>pill</string> <key>description</key> <string>steroid to reduce swelling</string> </dict><dict>
- <key>name</key> <string>Mantine</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#226, 2nd generation, Water Flying</string> </dict><dict>
- <key>name</key> <string>Ticlid</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug to prevent blood clots</string> </dict><dict>
- <key>name</key> <string>Zanosar</string> <key>type</key> <string>pill</string> <key>description</key> <string>cancer medication</string> </dict><dict>
- <key>name</key> <string>Ultram</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reliever</string> </dict><dict>
- <key>name</key> <string>Viibryd</string> <key>type</key> <string>pill</string> <key>description</key> <string>antidepressant</string> </dict><dict>
- <key>name</key> <string>Groudon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#383, 3rd generation, Ground</string> </dict><dict>
- <key>name</key> <string>Namenda</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat Alzheimer's disease</string> </dict><dict>
- <key>name</key> <string>Opana</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reliever</string> </dict><dict>
- <key>name</key> <string>Ozurdex</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug to treat macular edema (an eye condition)</string> </dict><dict>
- <key>name</key> <string>Genesect</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#649, 5th generation, Bug Steel</string> </dict><dict>
- <key>name</key> <string>Jolessa</string> <key>type</key> <string>pill</string> <key>description</key> <string>contraceptive</string> </dict><dict>
- <key>name</key> <string>Actos</string> <key>type</key> <string>pill</string> <key>description</key> <string>diabetes medication for blood sugar levels</string> </dict><dict>
- <key>name</key> <string>Umbreon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#197, 2nd generation, Dark</string> </dict><dict>
- <key>name</key> <string>Cafergot</string> <key>type</key> <string>pill</string> <key>description</key> <string>brand name for caffeine</string> </dict><dict>
- <key>name</key> <string>Nincada</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#290, 3rd generation, Bug Ground</string> </dict><dict>
- <key>name</key> <string>Lombre</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#271, 3rd generation, Water Grass</string> </dict><dict>
- <key>name</key> <string>Linoone</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#264, 3rd generation, Normal</string> </dict><dict>
- <key>name</key> <string>Giratina</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#487, 4th generation, Ghost Dragon</string> </dict><dict>
- <key>name</key> <string>Ursaring</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#217, 2nd generation, Normal</string> </dict><dict>
- <key>name</key> <string>Cobalion</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#638, 5th generation, Steel Fighting</string> </dict><dict>
- <key>name</key> <string>Flector</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reliever</string> </dict><dict>
- <key>name</key> <string>Starlix</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to help control blood sugar levels</string> </dict><dict>
+ <key>name</key> <string>Gligar</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#207, 2nd generation, Ground Flying</string> </dict><dict>
+ <key>name</key> <string>Zeasorb</string> <key>type</key> <string>pill</string> <key>description</key> <string>athlete's foot treatment medication</string> </dict><dict>
  <key>name</key> <string>Kaletra</string> <key>type</key> <string>pill</string> <key>description</key> <string>HIV medication</string> </dict><dict>
- <key>name</key> <string>Steelix</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#208, 2nd generation, Steel Ground</string> </dict><dict>
- <key>name</key> <string>Vulpix</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#037, 1st generation, Fire</string> </dict><dict>
- <key>name</key> <string>Flareon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#136, 1st generation, Fire</string> </dict><dict>
- <key>name</key> <string>Staravia</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#397, 4th generation, Normal Flying</string> </dict><dict>
- <key>name</key> <string>Numel</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#322, 3rd generation, Fire Ground</string> </dict><dict>
+ <key>name</key> <string>Vitoxapap</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reliever and fever reducer</string> </dict><dict>
+ <key>name</key> <string>Navane</string> <key>type</key> <string>pill</string> <key>description</key> <string>schizophrenia medication</string> </dict><dict>
+ <key>name</key> <string>Kecleon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#352, 3rd generation, Normal</string> </dict><dict>
+ <key>name</key> <string>Vaporeon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#134, 1st generation, Water</string> </dict><dict>
+ <key>name</key> <string>Proglycem</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug used to raise blood sugar</string> </dict><dict>
+ <key>name</key> <string>Bibarel</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#400, 4th generation, Normal Water</string> </dict><dict>
+ <key>name</key> <string>Viibryd</string> <key>type</key> <string>pill</string> <key>description</key> <string>antidepressant</string> </dict><dict>
+ <key>name</key> <string>Ultram</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reliever</string> </dict><dict>
+ <key>name</key> <string>Giratina</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#487, 4th generation, Ghost Dragon</string> </dict><dict>
  <key>name</key> <string>Avelox</string> <key>type</key> <string>pill</string> <key>description</key> <string>antibacteria medication</string> </dict><dict>
- <key>name</key> <string>Aron</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#304, 3rd generation, Steel Rock</string> </dict></array></array></dict>
+ <key>name</key> <string>Spinarak</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#167, 2nd generation, Bug Poison</string> </dict><dict>
+ <key>name</key> <string>Cryogonal</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#615, 5th generation, Ice</string> </dict><dict>
+ <key>name</key> <string>Mantine</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#226, 2nd generation, Water Flying</string> </dict><dict>
+ <key>name</key> <string>Aviane</string> <key>type</key> <string>pill</string> <key>description</key> <string>contraceptive</string> </dict><dict>
+ <key>name</key> <string>Virizion</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#640, 5th generation, Grass Fighting</string> </dict><dict>
+ <key>name</key> <string>Geref</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat growth hormone deficiency in children</string> </dict></array><array><dict>
+ <key>name</key> <string>Elocon</string> <key>type</key> <string>pill</string> <key>description</key> <string>steroid to reduce swelling</string> </dict><dict>
+ <key>name</key> <string>Servine</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#496, 5th generation, Grass</string> </dict><dict>
+ <key>name</key> <string>Tygacil</string> <key>type</key> <string>pill</string> <key>description</key> <string>antibacteria</string> </dict><dict>
+ <key>name</key> <string>Nadolol</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug to help blood flow</string> </dict><dict>
+ <key>name</key> <string>Hycort</string> <key>type</key> <string>pill</string> <key>description</key> <string>inflammation reducer</string> </dict><dict>
+ <key>name</key> <string>Espeon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#196, 2nd generation, Psychic</string> </dict><dict>
+ <key>name</key> <string>Umbreon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#197, 2nd generation, Dark</string> </dict><dict>
+ <key>name</key> <string>Crestor</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to help lower cholesterol</string> </dict><dict>
+ <key>name</key> <string>Xigris</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug to treat sepsis</string> </dict><dict>
+ <key>name</key> <string>Petilil</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#548, 5th generation, Grass</string> </dict><dict>
+ <key>name</key> <string>Remoraid</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#223, 2nd generation, Water</string> </dict><dict>
+ <key>name</key> <string>Mesprit</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#481, 4th generation, Psychic</string> </dict><dict>
+ <key>name</key> <string>Zomig</string> <key>type</key> <string>pill</string> <key>description</key> <string>headache medicine</string> </dict><dict>
+ <key>name</key> <string>Accelgor</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#617, 5th generation, Bug</string> </dict><dict>
+ <key>name</key> <string>Deino</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#633, 5th generation, Dark Dragon</string> </dict><dict>
+ <key>name</key> <string>Deoxys</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#386, 3rd generation, Psychic</string> </dict><dict>
+ <key>name</key> <string>Fraxure</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#611, 5th generation, Dragon</string> </dict><dict>
+ <key>name</key> <string>Merrem</string> <key>type</key> <string>pill</string> <key>description</key> <string>antibacteria for the abdomen</string> </dict><dict>
+ <key>name</key> <string>Staravia</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#397, 4th generation, Normal Flying</string> </dict><dict>
+ <key>name</key> <string>Actos</string> <key>type</key> <string>pill</string> <key>description</key> <string>diabetes medication for blood sugar levels</string> </dict></array><array><dict>
+ <key>name</key> <string>Jalyn</string> <key>type</key> <string>pill</string> <key>description</key> <string>muscle relaxer</string> </dict><dict>
+ <key>name</key> <string>Jantoven</string> <key>type</key> <string>pill</string> <key>description</key> <string>blood thinner to prevent heart attacks</string> </dict><dict>
+ <key>name</key> <string>Rayquaza</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#384, 3rd generation, Dragon Flying</string> </dict><dict>
+ <key>name</key> <string>Lumineon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#457, 4th generation, Water</string> </dict><dict>
+ <key>name</key> <string>Beedrill</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#015, 1st generation, Bug Poison</string> </dict><dict>
+ <key>name</key> <string>Ledian</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#166, 2nd generation, Bug Flying</string> </dict><dict>
+ <key>name</key> <string>Rhydon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#112, 1st generation, Ground Rock</string> </dict><dict>
+ <key>name</key> <string>Lutera</string> <key>type</key> <string>pill</string> <key>description</key> <string>contraceptive</string> </dict><dict>
+ <key>name</key> <string>Bronzor</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#436, 4th generation, Steel Psychic</string> </dict><dict>
+ <key>name</key> <string>Vanatrip</string> <key>type</key> <string>pill</string> <key>description</key> <string>antidepressant</string> </dict><dict>
+ <key>name</key> <string>Rozerem</string> <key>type</key> <string>pill</string> <key>description</key> <string>sedative to treat wake cycle disorders</string> </dict><dict>
+ <key>name</key> <string>Aron</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#304, 3rd generation, Steel Rock</string> </dict><dict>
+ <key>name</key> <string>Colcrys</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reducer</string> </dict><dict>
+ <key>name</key> <string>Lugia</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#249, 2nd generation, Psychic Flying</string> </dict><dict>
+ <key>name</key> <string>Mentax</string> <key>type</key> <string>pill</string> <key>description</key> <string>antifungus medication</string> </dict><dict>
+ <key>name</key> <string>Heatran</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#485, 4th generation, Fire Steel</string> </dict><dict>
+ <key>name</key> <string>Escavalier</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#589, 5th generation, Bug Steel</string> </dict><dict>
+ <key>name</key> <string>Gemzar</string> <key>type</key> <string>pill</string> <key>description</key> <string>cancer medication</string> </dict><dict>
+ <key>name</key> <string>Keppra</string> <key>type</key> <string>pill</string> <key>description</key> <string>epilepsy/seizure treatment medication</string> </dict><dict>
+ <key>name</key> <string>Nincada</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#290, 3rd generation, Bug Ground</string> </dict></array><array><dict>
+ <key>name</key> <string>Voltorb</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#100, 1st generation, Electric</string> </dict><dict>
+ <key>name</key> <string>Shaymin</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#492, 4th generation, Grass Flying</string> </dict><dict>
+ <key>name</key> <string>Flareon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#136, 1st generation, Fire</string> </dict><dict>
+ <key>name</key> <string>Quinidine</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug to treat heart rhythm disorders</string> </dict><dict>
+ <key>name</key> <string>Daliresp</string> <key>type</key> <string>pill</string> <key>description</key> <string>inflammation reducer</string> </dict><dict>
+ <key>name</key> <string>IvyStat</string> <key>type</key> <string>pill</string> <key>description</key> <string>rash treatment medication</string> </dict><dict>
+ <key>name</key> <string>Maxalt</string> <key>type</key> <string>pill</string> <key>description</key> <string>medicine to treat headaches</string> </dict><dict>
+ <key>name</key> <string>Xanax</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug to treat anxiety disorders, panic disorders and depression</string> </dict><dict>
+ <key>name</key> <string>Zyvox</string> <key>type</key> <string>pill</string> <key>description</key> <string>antibacteria</string> </dict><dict>
+ <key>name</key> <string>Moltres</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#146, 1st generation, Fire Flying</string> </dict><dict>
+ <key>name</key> <string>Lunatone</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#337, 3rd generation, Rock Psychic</string> </dict><dict>
+ <key>name</key> <string>Volcarona</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#637, 5th generation, Bug Fire</string> </dict><dict>
+ <key>name</key> <string>Flector</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reliever</string> </dict><dict>
+ <key>name</key> <string>Abraxane</string> <key>type</key> <string>pill</string> <key>description</key> <string>a cancer medication</string> </dict><dict>
+ <key>name</key> <string>Vulpix</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#037, 1st generation, Fire</string> </dict><dict>
+ <key>name</key> <string>Gleevec</string> <key>type</key> <string>pill</string> <key>description</key> <string>leukemia medication</string> </dict><dict>
+ <key>name</key> <string>Ursaring</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#217, 2nd generation, Normal</string> </dict><dict>
+ <key>name</key> <string>Tauros</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#128, 1st generation, Normal</string> </dict><dict>
+ <key>name</key> <string>Maractus</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#556, 5th generation, Grass</string> </dict><dict>
+ <key>name</key> <string>Vibrava</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#329, 3rd generation, Ground Dragod</string> </dict></array><array><dict>
+ <key>name</key> <string>Luxiq</string> <key>type</key> <string>pill</string> <key>description</key> <string>steroid to prevent inflammation</string> </dict><dict>
+ <key>name</key> <string>Fareston</string> <key>type</key> <string>pill</string> <key>description</key> <string>breast cancer medication</string> </dict><dict>
+ <key>name</key> <string>Hyperrab</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug used to treat rabies</string> </dict><dict>
+ <key>name</key> <string>Luxio</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#404, 4th generation, Electric</string> </dict><dict>
+ <key>name</key> <string>Rescriptor</string> <key>type</key> <string>pill</string> <key>description</key> <string>HIV medication</string> </dict><dict>
+ <key>name</key> <string>Namenda</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat Alzheimer's disease</string> </dict><dict>
+ <key>name</key> <string>Starlix</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to help control blood sugar levels</string> </dict><dict>
+ <key>name</key> <string>Ticlid</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug to prevent blood clots</string> </dict><dict>
+ <key>name</key> <string>Azurill</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#298, 3rd generation, Normal</string> </dict><dict>
+ <key>name</key> <string>Genesect</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#649, 5th generation, Bug Steel</string> </dict><dict>
+ <key>name</key> <string>Rhyperior</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#464, 4th generation, Ground Rock</string> </dict><dict>
+ <key>name</key> <string>Cafergot</string> <key>type</key> <string>pill</string> <key>description</key> <string>brand name for caffeine</string> </dict><dict>
+ <key>name</key> <string>Gliscor</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#472, 4th generation, Ground Flying</string> </dict><dict>
+ <key>name</key> <string>Meloetta</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#648, 5th generation, Normal Psychic Fighting</string> </dict><dict>
+ <key>name</key> <string>Linoone</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#264, 3rd generation, Normal</string> </dict><dict>
+ <key>name</key> <string>Sinemet</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat Parkinson's disease</string> </dict><dict>
+ <key>name</key> <string>Omastar</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#139, 1st generation, Rock Water</string> </dict><dict>
+ <key>name</key> <string>Zanosar</string> <key>type</key> <string>pill</string> <key>description</key> <string>cancer medication</string> </dict><dict>
+ <key>name</key> <string>Geodon</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat schizophrenia</string> </dict><dict>
+ <key>name</key> <string>Briellyn</string> <key>type</key> <string>pill</string> <key>description</key> <string>contraceptive</string> </dict></array><array><dict>
+ <key>name</key> <string>Voltaren</string> <key>type</key> <string>pill</string> <key>description</key> <string>anti inflammatory drug</string> </dict><dict>
+ <key>name</key> <string>Hytrin</string> <key>type</key> <string>pill</string> <key>description</key> <string>muscle relaxer</string> </dict><dict>
+ <key>name</key> <string>Groudon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#383, 3rd generation, Ground</string> </dict><dict>
+ <key>name</key> <string>Illumise</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#314, 3rd generation, Bug</string> </dict><dict>
+ <key>name</key> <string>Aranesp</string> <key>type</key> <string>pill</string> <key>description</key> <string>artificial protein to protect red blood cells</string> </dict><dict>
+ <key>name</key> <string>Protonix</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to lower stomach acid production</string> </dict><dict>
+ <key>name</key> <string>Metang</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#375, 3rd generation, Steel Psychic</string> </dict><dict>
+ <key>name</key> <string>Lombre</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#271, 3rd generation, Water Grass</string> </dict><dict>
+ <key>name</key> <string>Glaceon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#471, 4th generation, Ice</string> </dict><dict>
+ <key>name</key> <string>Shinx</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#403, 4th generation, Electric</string> </dict><dict>
+ <key>name</key> <string>Milotic</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#350, 3rd generation, Water</string> </dict><dict>
+ <key>name</key> <string>Mylotarg</string> <key>type</key> <string>pill</string> <key>description</key> <string>cancer medication</string> </dict><dict>
+ <key>name</key> <string>Altaria</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#334, 3rd generation, Dragon Flying</string> </dict><dict>
+ <key>name</key> <string>Elgyem</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#605, 5th generation, Psychic</string> </dict><dict>
+ <key>name</key> <string>Cobalion</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#638, 5th generation, Steel Fighting</string> </dict><dict>
+ <key>name</key> <string>Dolotic</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reliever for the ear</string> </dict><dict>
+ <key>name</key> <string>Econochlor</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication for serious infections</string> </dict><dict>
+ <key>name</key> <string>Bonsly</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#438, 4th generation, Rock</string> </dict><dict>
+ <key>name</key> <string>Gastrodon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#423, 4th generation, Water Ground</string> </dict><dict>
+ <key>name</key> <string>Doribax</string> <key>type</key> <string>pill</string> <key>description</key> <string>antibacteria for the stomach</string> </dict></array><array><dict>
+ <key>name</key> <string>Marill</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#183, 2nd generation, Water</string> </dict><dict>
+ <key>name</key> <string>Munchlax</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#446, 4th generation, Normal</string> </dict><dict>
+ <key>name</key> <string>Finneon</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#456, 4th generation, Water</string> </dict><dict>
+ <key>name</key> <string>Excadrill</string> <key>type</key> <string>pokemon</string> <key>description</key> <string> #530, 5th generation, Ground Steel</string> </dict><dict>
+ <key>name</key> <string>Grovyle</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#253, 3rd generation, Grass</string> </dict><dict>
+ <key>name</key> <string>Azumarill</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#184, 2nd generation, Water</string> </dict><dict>
+ <key>name</key> <string>Ozurdex</string> <key>type</key> <string>pill</string> <key>description</key> <string>drug to treat macular edema (an eye condition)</string> </dict><dict>
+ <key>name</key> <string>Cleffa</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#173, 2nd generation, Normal</string> </dict><dict>
+ <key>name</key> <string>Aipom</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#190, 2nd generation, Normal</string> </dict><dict>
+ <key>name</key> <string>Xibrom</string> <key>type</key> <string>pill</string> <key>description</key> <string>antiinflammatory drug</string> </dict><dict>
+ <key>name</key> <string>Banzel</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication used to treat epilepsy</string> </dict><dict>
+ <key>name</key> <string>Basculin</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#550, 5th generation, Water</string> </dict><dict>
+ <key>name</key> <string>Fuzeon</string> <key>type</key> <string>pill</string> <key>description</key> <string>HIV medication</string> </dict><dict>
+ <key>name</key> <string>Ifex</string> <key>type</key> <string>pill</string> <key>description</key> <string>cancer medication</string> </dict><dict>
+ <key>name</key> <string>Gammagard</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat deficiencies in the immune system</string> </dict><dict>
+ <key>name</key> <string>Reuniclus</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#579, 5th generation, Psychic</string> </dict><dict>
+ <key>name</key> <string>Tepig</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#498, 5th generation, Fire</string> </dict><dict>
+ <key>name</key> <string>Steelix</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#208, 2nd generation, Steel Ground</string> </dict><dict>
+ <key>name</key> <string>Vivarin</string> <key>type</key> <string>pill</string> <key>description</key> <string>brand name for caffeine</string> </dict><dict>
+ <key>name</key> <string>RotaTeq</string> <key>type</key> <string>pill</string> <key>description</key> <string>vaccine for the rotavirus </string> </dict></array><array><dict>
+ <key>name</key> <string>Blocadren</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication for high blood pressure</string> </dict><dict>
+ <key>name</key> <string>Carnitor</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication for metabolism disorders</string> </dict><dict>
+ <key>name</key> <string>Absol</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#359, 3rd generation, Dark</string> </dict><dict>
+ <key>name</key> <string>Abacavir</string> <key>type</key> <string>pill</string> <key>description</key> <string>antiviral medication to treat HIV</string> </dict><dict>
+ <key>name</key> <string>Ranexa</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat chronic chest pain</string> </dict><dict>
+ <key>name</key> <string>Opana</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reliever</string> </dict><dict>
+ <key>name</key> <string>Nalfon</string> <key>type</key> <string>pill</string> <key>description</key> <string>pain reliever</string> </dict><dict>
+ <key>name</key> <string>Renagel</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat low levels of calcium</string> </dict><dict>
+ <key>name</key> <string>Numel</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#322, 3rd generation, Fire Ground</string> </dict><dict>
+ <key>name</key> <string>Sanctura</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication to treat urinary incontinence </string> </dict><dict>
+ <key>name</key> <string>Sentret</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#161, 2nd generation, Normal</string> </dict><dict>
+ <key>name</key> <string>Clasteon</string> <key>type</key> <string>pill</string> <key>description</key> <string>cancer medication</string> </dict><dict>
+ <key>name</key> <string>Decadron</string> <key>type</key> <string>pill</string> <key>description</key> <string>inflammation reducer for athsma treatment</string> </dict><dict>
+ <key>name</key> <string>Azor</string> <key>type</key> <string>pill</string> <key>description</key> <string>muscle relaxer</string> </dict><dict>
+ <key>name</key> <string>Aceon</string> <key>type</key> <string>pill</string> <key>description</key> <string>ACE inhibitor for high blood pressure</string> </dict><dict>
+ <key>name</key> <string>Solosis</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#577, 5th generation, Psychic</string> </dict><dict>
+ <key>name</key> <string>Urso</string> <key>type</key> <string>pill</string> <key>description</key> <string>acid to decrease cholesterol</string> </dict><dict>
+ <key>name</key> <string>Iplex</string> <key>type</key> <string>pill</string> <key>description</key> <string>medication for growth failure</string> </dict><dict>
+ <key>name</key> <string>Jolessa</string> <key>type</key> <string>pill</string> <key>description</key> <string>contraceptive</string> </dict><dict>
+ <key>name</key> <string>Marowak</string> <key>type</key> <string>pokemon</string> <key>description</key> <string>#105, 1st generation, Ground</string> </dict></array></array></dict>

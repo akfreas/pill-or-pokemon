@@ -34,7 +34,60 @@
 
 }
 
+-(NSURL *)documentsUrl {
+    
+    NSURL *unlockedZonesPlistUrl = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    unlockedZonesPlistUrl = [unlockedZonesPlistUrl URLByAppendingPathComponent:@"Scores.plist"];
+    return unlockedZonesPlistUrl;
+}
 
+-(NSMutableArray *)unlockedZonesFromPlist {
+
+    NSURL *unlockedZonesPlistUrl = [self documentsUrl];
+    NSMutableArray *zones = [[NSDictionary dictionaryWithContentsOfURL:unlockedZonesPlistUrl] objectForKey:@"array"];
+    return zones;
+}
+
+-(void)unlockZoneInPlist:(NSNumber *)zone {
+    
+    NSURL *unlockedZonesPlistUrl = [self documentsUrl];
+    NSMutableArray *zones = [[NSDictionary dictionaryWithContentsOfURL:unlockedZonesPlistUrl] objectForKey:@"array"];
+    [zones replaceObjectAtIndex:[zone intValue] withObject:@"unlocked"];
+}
+
+-(void)configureZoneViewsWithPlist {
+
+    NSString *pathToScorePlist = [[NSBundle mainBundle] pathForResource:@"UnlockedZones" ofType:@"plist"];
+    NSArray *scoreArray = [[NSDictionary dictionaryWithContentsOfFile:pathToScorePlist] objectForKey:@"Zones"];
+    
+    
+    if(scoreArray != nil) {
+        
+        for(int i=0; i<[scoreArray count]; i++) {
+            
+            UIImageView *imageView = (UIImageView *)[self.view viewWithTag:i + 1];
+            imageView.alpha = [[scoreArray objectAtIndex:i] floatValue]; // == YES ? 1 : 0;
+        }
+    }
+}
+
+-(IBAction)showHelp:(id)sender {
+    
+    UIAlertView *helpAlert = [[UIAlertView alloc] initWithTitle:@"How to Play"
+                                                        message:@"It's simple. Just select a zone and try to determine whether or not the displayed item is a pill or a Pokemon.  When you are ready to answer, click the 'Pill' or the 'Pokemon' button!" 
+                                                       delegate:self
+                                              cancelButtonTitle:@"Thanks!" 
+                                              otherButtonTitles:nil];
+    [helpAlert show];
+    
+}
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self configureZoneViewsWithPlist];
+    
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

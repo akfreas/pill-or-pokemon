@@ -1,5 +1,10 @@
 #import "VC_SplashScreen.h"
+
+#ifdef BUILD_TARGET_FREE
+#import "VC_ZoneSelectorFree.h"
+#else
 #import "VC_ZoneSelector.h"
+#endif
 
 #import <UIKit/UIKit.h>
 

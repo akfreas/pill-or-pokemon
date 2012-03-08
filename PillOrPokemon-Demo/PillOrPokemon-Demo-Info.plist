@@ -11,7 +11,6 @@
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>icon copy.png</string>
-		<string>icon small.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -20,14 +19,13 @@
 			<key>CFBundleIconFiles</key>
 			<array>
 				<string>icon copy.png</string>
-				<string>icon small.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<false/>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>sashimiblade.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -49,6 +47,8 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>
