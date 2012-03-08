@@ -5,7 +5,7 @@
 //  Created by Alexander Freas on 1/5/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
-
+#import "GamePlayData.h"
 #import "AppDelegate.h"
 #import "VC_Main.h"
 
@@ -18,13 +18,16 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     mainView = [[VC_Main alloc] init];
     
+    GamePlayData *data = [[GamePlayData alloc] init];
+    
+    NSArray *quizItems = data.quizItems;
+    
     NSLog(@"%@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]);
 
     NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];    
-    NSLog(@"Zones: %@", [PlistFunctions zonesFromPlist]);
     if ([version isEqualToString:@"1.0.1"] && [PlistFunctions zonesFromPlist] == nil) {
         [PlistFunctions initializeZonePlistWithLockedZones];
-    }
+    }   
     self.window.rootViewController = mainView;
     // Override point for customization after application launch.
     //self.window.backgroundColor = [UIColor whiteColor];

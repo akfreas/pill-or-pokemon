@@ -1,0 +1,80 @@
+Absol-#359, 3rd generation, Dark
+Accelgor-#617, 5th generation, Bug
+Aipom-#190, 2nd generation, Normal
+Altaria-#334, 3rd generation, Dragon Flying
+Aron-#304, 3rd generation, Steel Rock
+Azurill-#298, 3rd generation, Normal
+Azumarill-#184, 2nd generation, Water
+Basculin-#550, 5th generation, Water
+Beedrill-#015, 1st generation, Bug Poison
+Bibarel-#400, 4th generation, Normal Water
+Bonsly-#438, 4th generation, Rock
+Bronzor-#436, 4th generation, Steel Psychic
+Cleffa-#173, 2nd generation, Normal
+Cobalion-#638, 5th generation, Steel Fighting
+Cryogonal-#615, 5th generation, Ice
+Deino-#633, 5th generation, Dark Dragon
+Deoxys-#386, 3rd generation, Psychic
+Elgyem-#605, 5th generation, Psychic
+Escavalier-#589, 5th generation, Bug Steel
+Excadrill- #530, 5th generation, Ground Steel
+Espeon-#196, 2nd generation, Psychic
+Finneon-#456, 4th generation, Water
+Flareon-#136, 1st generation, Fire
+Fraxure-#611, 5th generation, Dragon
+Gastrodon-#423, 4th generation, Water Ground
+Genesect-#649, 5th generation, Bug Steel
+Giratina-#487, 4th generation, Ghost Dragon
+Glaceon-#471, 4th generation, Ice
+Gligar-#207, 2nd generation, Ground Flying
+Gliscor-#472, 4th generation, Ground Flying
+Groudon-#383, 3rd generation, Ground
+Grovyle-#253, 3rd generation, Grass
+Heatran-#485, 4th generation, Fire Steel
+Illumise-#314, 3rd generation, Bug
+Kecleon-#352, 3rd generation, Normal
+Ledian-#166, 2nd generation, Bug Flying
+Linoone-#264, 3rd generation, Normal
+Lombre-#271, 3rd generation, Water Grass
+Lugia-#249, 2nd generation, Psychic Flying
+Lumineon-#457, 4th generation, Water
+Lunatone-#337, 3rd generation, Rock Psychic
+Luxio-#404, 4th generation, Electric
+Mantine-#226, 2nd generation, Water Flying
+Maractus-#556, 5th generation, Grass
+Marill-#183, 2nd generation, Water
+Marowak-#105, 1st generation, Ground
+Meloetta-#648, 5th generation, Normal Psychic Fighting
+Mesprit-#481, 4th generation, Psychic
+Metang-#375, 3rd generation, Steel Psychic
+Milotic-#350, 3rd generation, Water
+Moltres-#146, 1st generation, Fire Flying
+Munchlax-#446, 4th generation, Normal
+Nincada-#290, 3rd generation, Bug Ground
+Numel-#322, 3rd generation, Fire Ground
+Omastar-#139, 1st generation, Rock Water
+Petilil-#548, 5th generation, Grass
+Rayquaza-#384, 3rd generation, Dragon Flying
+Remoraid-#223, 2nd generation, Water
+Reuniclus-#579, 5th generation, Psychic
+Rhydon-#112, 1st generation, Ground Rock
+Rhyperior-#464, 4th generation, Ground Rock
+Sentret-#161, 2nd generation, Normal
+Servine-#496, 5th generation, Grass
+Shaymin-#492, 4th generation, Grass Flying
+Shinx-#403, 4th generation, Electric
+Solosis-#577, 5th generation, Psychic
+Spinarak-#167, 2nd generation, Bug Poison
+Staravia-#397, 4th generation, Normal Flying
+Steelix-#208, 2nd generation, Steel Ground
+Tauros-#128, 1st generation, Normal
+Tepig-#498, 5th generation, Fire
+Umbreon-#197, 2nd generation, Dark
+Ursaring-#217, 2nd generation, Normal
+Vaporeon-#134, 1st generation, Water
+Vibrava-#329, 3rd generation, Ground Dragod
+Virizion-#640, 5th generation, Grass Fighting
+Volcarona-#637, 5th generation, Bug Fire
+Voltorb-#100, 1st generation, Electric
+Vulpix-#037, 1st generation, Fire
+Zebstrika-#523, 5th generation, Electric
