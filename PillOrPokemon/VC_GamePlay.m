@@ -30,7 +30,7 @@
     NSUInteger zone;
     NSUInteger totalNumberOfQuestions;
     
-    GamePlayData *quizData;
+    NSArray *quizData;
     NSMutableArray *incorrectQuizQuestions;
     NSArray *selectionType;
     QuizItem *currentQuizItem;
@@ -44,10 +44,10 @@
     quizProgressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
 
     incorrectQuizQuestions = [NSMutableArray arrayWithCapacity:0];
-    quizData = [[GamePlayData alloc] initWithZone:theZone];
+    quizData = [[GamePlayData sharedInstance] quizItems];
     totalNumberOfQuestions = [quizData count];
     selectionType = [[NSArray alloc] initWithObjects:@"pill", @"pokemon", nil];
-    [quizData shuffleQuizData];
+    [[GamePlayData sharedInstance] shuffleQuizData];
     return self;
 }
 
@@ -92,7 +92,7 @@
         progressLabel.text = [NSString stringWithFormat:@"%d questions left", questionsRemaining];
 
         
-        currentQuizItem = [quizData quizItemAtIndex:currentQuizItemIndex];
+        currentQuizItem = [quizData objectAtIndex:currentQuizItemIndex];
         
         [self configureUIElementsForUnansweredQuestion];
         
@@ -107,7 +107,7 @@
             perfect = YES;
         }
         [self showEndOfGameMessageWithStatus:perfect];
-        [quizData save];
+        [[GamePlayData sharedInstance] save];
     }
     
 }
@@ -138,12 +138,10 @@
 
 -(void)setQuizData {
     
-    NSString *gameInfoFile = [[NSBundle mainBundle] pathForResource:@"PPData" ofType:@"plist"];
-    NSDictionary *temp = [[NSDictionary alloc] initWithContentsOfFile:gameInfoFile];
     selectionType = [[NSArray alloc] initWithObjects:@"pill", @"pokemon", nil];
     totalNumberOfQuestions = [quizData count];
 
-    [quizData shuffleQuizData];
+    [[GamePlayData sharedInstance] shuffleQuizData];
 }
 
 -(void)configureUIElementsForUnansweredQuestion {

@@ -57,7 +57,6 @@ static GamePlayData *gamePlayData;
     
     if (self) {
         context = [self managedObjectContext];     
-        [self setQuizItemsInZone:zone];
     }
     
     return self;   
@@ -65,8 +64,8 @@ static GamePlayData *gamePlayData;
 
 
 
--(QuizItem *)quizItemAtIndex:(NSInteger)index {
-    return [quizItemsInZone objectAtIndex:index];
+-(NSArray *)quizItems {
+    return quizItemsInZone;
 }
 
 -(NSInteger)count {

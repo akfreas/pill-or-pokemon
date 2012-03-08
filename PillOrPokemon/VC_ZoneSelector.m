@@ -8,6 +8,7 @@
 
 #import "VC_ZoneSelector.h"
 
+
 @implementation VC_ZoneSelector
 
 
@@ -39,7 +40,7 @@
 
 -(void)configureZoneViewsWithPlist {
 
-    NSArray *zones = [NSArray arrayWithArray:[PlistFunctions zonesFromPlist]];
+    NSArray *zones = [GamePlayData sharedInstance];
     
     if(zones != nil) {
         

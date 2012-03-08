@@ -18,7 +18,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     mainView = [[VC_Main alloc] init];
     
-    
+    [GamePlayData sharedInstance];
     
     NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];    
     NSUserDefaults *defaults = [[NSUserDefaults alloc] init];

@@ -6,9 +6,10 @@
 +(void)createDatabaseForFirstUse;
 
 
--(QuizItem *)quizItemAtIndex:(NSInteger)index;
+-(NSArray *)quizItems;
 -(NSInteger)count;
 -(void)save;
 -(void)shuffleQuizData;
+-(void)setZone:(NSInteger)zone;
 
 @end
