@@ -114,6 +114,7 @@
             [[GamePlayData sharedInstance] markZoneComplete:zone];
             if (zone != 4) {
                 [[GamePlayData sharedInstance] unlockZone:zone + 1];
+                [[GamePlayData sharedInstance] markZoneComplete:zone];
             }
         }
         [self showEndOfGameMessageWithStatus:perfect];
@@ -192,11 +193,6 @@
     [self dismissModalViewControllerAnimated:YES];    
 }
 
--(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    
-    [self goToHomeScreen];
-    
-}
 -(IBAction)clickNext:(id)sender {
     
     [self moveToNextItem];
@@ -226,12 +222,15 @@
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
  
     switch (buttonIndex) {
+            
         case 0:
+            [zoneSelector refresh];
+            [self goToHomeScreen];
+            
+        case 1:
             [self resetGame];
             break;
             
-        case 1:
-            [zoneSelector refresh];
         default:
             break;
     }

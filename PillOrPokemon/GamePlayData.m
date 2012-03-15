@@ -149,16 +149,18 @@
     [request setPredicate:predicateForZone];
     
     Zone *zone = (Zone *)[[context executeFetchRequest:request error:&error] lastObject];
-    zone.unlocked = [NSNumber numberWithBool:YES];
-    
+    zone.completed = [NSNumber numberWithBool:YES];
+    [context save:&error];
+
     NSFetchRequest *quizItemRequest = [self quizItemFetchRequest];
     [quizItemRequest setPredicate:predicateForZone];
-    NSArray *quizItems = [[context executeFetchRequest:quizItemRequest error:&error] lastObject];
-    for (QuizItem *item in quizItems) {
-        item.correct = NO;
+    NSArray *quizItems = [context executeFetchRequest:quizItemRequest error:&error];
+    for (int i=0; i<[quizItems count]; i++) {
+        QuizItem *item = [quizItems objectAtIndex:i];
+        item.correct = [NSNumber numberWithBool:NO];
+        [context save:&error];
     }
     
-    [context save:&error];
 }
 
 -(NSInteger)count {
