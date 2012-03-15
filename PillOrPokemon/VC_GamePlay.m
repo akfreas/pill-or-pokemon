@@ -7,6 +7,7 @@
 //
 
 #import "VC_GamePlay.h"
+#import "VC_ZoneSelector.h"
 #import "GamePlayData.h"
 #import "QuizItem.h"
 
@@ -34,16 +35,21 @@
     NSMutableArray *incorrectQuizQuestions;
     NSArray *selectionType;
     QuizItem *currentQuizItem;
+    
+    VC_ZoneSelector *zoneSelector;
 }
 
 
 
--(id)initWithZone:(NSInteger)theZone {
+-(id)initWithZone:(NSInteger)theZone zoneSelector:(VC_ZoneSelector *)theZoneSelector {
     self = [super initWithNibName:@"GamePlay" bundle:nil];
+    
+    zoneSelector = theZoneSelector;
     zone = theZone;
     quizProgressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
-
+    
     incorrectQuizQuestions = [NSMutableArray arrayWithCapacity:0];
+    [[GamePlayData sharedInstance] setZone:theZone];
     quizData = [[GamePlayData sharedInstance] quizItems];
     totalNumberOfQuestions = [quizData count];
     selectionType = [[NSArray alloc] initWithObjects:@"pill", @"pokemon", nil];
@@ -105,6 +111,10 @@
         
         if (totalNumberOfQuestions == score) {
             perfect = YES;
+            [[GamePlayData sharedInstance] markZoneComplete:zone];
+            if (zone != 4) {
+                [[GamePlayData sharedInstance] unlockZone:zone + 1];
+            }
         }
         [self showEndOfGameMessageWithStatus:perfect];
         [[GamePlayData sharedInstance] save];
@@ -121,11 +131,14 @@
                                                    delegate: self
                                           cancelButtonTitle: @"Main Menu"
                                           otherButtonTitles: nil];
-    if (perfect) {
-        endOfGameMessage = [[NSString alloc] initWithString: @"Congratulations! You got a perfect score and have unlocked the next zone!"];
+    if (perfect && zone < 4) {
+        
+        endOfGameMessage = [[NSString alloc] initWithString:@"Congratulations! You got a perfect score and have unlocked the next zone!"];
         [alert addButtonWithTitle:@"Proceed to next zone"];
+    } else if (perfect && zone == 4) {
+        endOfGameMessage = [[NSString alloc] initWithString:@"Congratulations! You beat the game! If you enjoyed playing, please rate the game well on the iTunes store!"];
     } else {
-        endOfGameMessage = [[NSString alloc] initWithFormat: @"Your score was %d out of %d. Play again to get a perfect score and unlock the next level!", score, totalNumberOfQuestions];
+        endOfGameMessage = [[NSString alloc] initWithFormat:@"Your score was %d out of %d. Play again to get a perfect score and unlock the next level!", score, totalNumberOfQuestions];
         [alert addButtonWithTitle:@"Play again"];
     }
     
@@ -210,6 +223,20 @@
     
 }
 
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+ 
+    switch (buttonIndex) {
+        case 0:
+            [self resetGame];
+            break;
+            
+        case 1:
+            [zoneSelector refresh];
+        default:
+            break;
+    }
+}
+
 -(void)viewDidLoad {
     [super viewDidLoad];
     
@@ -217,13 +244,6 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Reset" style:UIBarButtonItemStyleDone target:self action:@selector(resetGame)];
     
     [self resetGame];
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

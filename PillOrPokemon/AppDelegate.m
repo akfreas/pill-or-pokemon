@@ -1,10 +1,3 @@
-//
-//  AppDelegate.m
-//  PillOrPokemon
-//
-//  Created by Alexander Freas on 1/5/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
 #import "GamePlayData.h"
 #import "AppDelegate.h"
 #import "VC_Main.h"
@@ -13,12 +6,11 @@
 
 @synthesize window = _window;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+-(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     mainView = [[VC_Main alloc] init];
     
-    [GamePlayData sharedInstance];
     
     NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];    
     NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
@@ -27,6 +19,7 @@
         [defaults setBool:YES forKey:@"hasBeenLaunched"];
         [defaults synchronize];
     }   
+    [GamePlayData sharedInstance];
     self.window.rootViewController = mainView;
     // Override point for customization after application launch.
     //self.window.backgroundColor = [UIColor whiteColor];

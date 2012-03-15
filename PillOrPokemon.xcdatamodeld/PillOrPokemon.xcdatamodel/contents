@@ -10,9 +10,10 @@
     <entity name="Zones" syncable="YES">
         <attribute name="completed" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="gameZone" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="unlocked" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
         <element name="QuizItem" positionX="160" positionY="192" width="128" height="120"/>
-        <element name="Zones" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Zones" positionX="160" positionY="192" width="128" height="90"/>
     </elements>
 </model>

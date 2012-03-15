@@ -38,6 +38,8 @@
 		4E0A74BB150871A9002F97AF /* PillOrPokemon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A74B9150871A9002F97AF /* PillOrPokemon.xcdatamodeld */; };
 		4E0A74BD15087CF2002F97AF /* PillOrPokemonData.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4E0A74BC15087CF2002F97AF /* PillOrPokemonData.sqlite */; };
 		4E34588614FB190500D1F9FE /* UnlockedZones.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E34588514FB190500D1F9FE /* UnlockedZones.plist */; };
+		4E87609315105635009802C2 /* Zone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E87609215105635009802C2 /* Zone.m */; };
+		4EEA368C1511BEA600FE010B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEA368A1511BE9600FE010B /* QuartzCore.framework */; };
 		D371991B14BBE4E600FD78C8 /* ZoneSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = D371991A14BBE4E600FD78C8 /* ZoneSelector.xib */; };
 		D371991D14BBE52900FD78C8 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = D371991C14BBE52900FD78C8 /* banner.png */; };
 		D371992314BBE55C00FD78C8 /* zone1.png in Resources */ = {isa = PBXBuildFile; fileRef = D371991F14BBE55C00FD78C8 /* zone1.png */; };
@@ -104,6 +106,9 @@
 		4E0A74BA150871A9002F97AF /* PillOrPokemon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PillOrPokemon.xcdatamodel; sourceTree = "<group>"; };
 		4E0A74BC15087CF2002F97AF /* PillOrPokemonData.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = PillOrPokemonData.sqlite; path = PillOrPokemon/PillOrPokemonData.sqlite; sourceTree = "<group>"; };
 		4E34588514FB190500D1F9FE /* UnlockedZones.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UnlockedZones.plist; sourceTree = "<group>"; };
+		4E87609115105635009802C2 /* Zone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zone.h; sourceTree = "<group>"; };
+		4E87609215105635009802C2 /* Zone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zone.m; sourceTree = "<group>"; };
+		4EEA368A1511BE9600FE010B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D371991A14BBE4E600FD78C8 /* ZoneSelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoneSelector.xib; sourceTree = "<group>"; };
 		D371991C14BBE52900FD78C8 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
 		D371991F14BBE55C00FD78C8 /* zone1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zone1.png; sourceTree = "<group>"; };
@@ -158,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EEA368C1511BEA600FE010B /* QuartzCore.framework in Frameworks */,
 				4E0A74A61508613E002F97AF /* CoreData.framework in Frameworks */,
 				D3ABCE8214B6922600CBE556 /* UIKit.framework in Frameworks */,
 				D3ABCE8414B6922600CBE556 /* Foundation.framework in Frameworks */,
@@ -246,6 +252,7 @@
 		D3ABCE8014B6922600CBE556 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4EEA368A1511BE9600FE010B /* QuartzCore.framework */,
 				4E0A74A41508611A002F97AF /* CoreData.framework */,
 				D3ABCE8114B6922600CBE556 /* UIKit.framework */,
 				D3ABCE8314B6922600CBE556 /* Foundation.framework */,
@@ -274,6 +281,8 @@
 				4E0A74A215086030002F97AF /* GamePlayData.m */,
 				4E0A74A715086206002F97AF /* QuizItem.h */,
 				4E0A74A815086206002F97AF /* QuizItem.m */,
+				4E87609115105635009802C2 /* Zone.h */,
+				4E87609215105635009802C2 /* Zone.m */,
 				D3ABCE8814B6922600CBE556 /* Supporting Files */,
 			);
 			name = Classes;
@@ -397,7 +406,7 @@
 		D3ABCE7414B6922400CBE556 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = D3ABCE7714B6922400CBE556 /* Build configuration list for PBXProject "PillOrPokemon" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -518,6 +527,7 @@
 				4E0A74A315086030002F97AF /* GamePlayData.m in Sources */,
 				4E0A74A915086206002F97AF /* QuizItem.m in Sources */,
 				4E0A74BB150871A9002F97AF /* PillOrPokemon.xcdatamodeld in Sources */,
+				4E87609315105635009802C2 /* Zone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

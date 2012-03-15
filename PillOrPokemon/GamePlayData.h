@@ -7,9 +7,12 @@
 
 
 -(NSArray *)quizItems;
+-(NSArray *)zones;
 -(NSInteger)count;
 -(void)save;
 -(void)shuffleQuizData;
 -(void)setZone:(NSInteger)zone;
+-(void)unlockZone:(NSInteger)theZone;
+-(void)markZoneComplete:(NSInteger)theZone;
 
 @end
