@@ -49,11 +49,9 @@
     quizProgressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
     
     incorrectQuizQuestions = [NSMutableArray arrayWithCapacity:0];
-    [[GamePlayData sharedInstance] setZone:theZone];
-    quizData = [[GamePlayData sharedInstance] quizItems];
+    [self resetGame];
     totalNumberOfQuestions = [quizData count];
     selectionType = [[NSArray alloc] initWithObjects:@"pill", @"pokemon", nil];
-    [[GamePlayData sharedInstance] shuffleQuizData];
     return self;
 }
 
@@ -135,7 +133,6 @@
     if (perfect && zone < 4) {
         
         endOfGameMessage = [[NSString alloc] initWithString:@"Congratulations! You got a perfect score and have unlocked the next zone!"];
-        [alert addButtonWithTitle:@"Proceed to next zone"];
     } else if (perfect && zone == 4) {
         endOfGameMessage = [[NSString alloc] initWithString:@"Congratulations! You beat the game! If you enjoyed playing, please rate the game well on the iTunes store!"];
     } else {
@@ -151,7 +148,8 @@
 
 
 -(void)setQuizData {
-    
+    [[GamePlayData sharedInstance] setZone:zone];
+    quizData = [[GamePlayData sharedInstance] quizItems];
     selectionType = [[NSArray alloc] initWithObjects:@"pill", @"pokemon", nil];
     totalNumberOfQuestions = [quizData count];
 
