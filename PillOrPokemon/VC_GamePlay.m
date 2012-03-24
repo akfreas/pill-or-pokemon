@@ -1,11 +1,3 @@
-    //
-//  VC_GamePlay.m
-//  PillOrPokemon
-//
-//  Created by Alexander Freas on 1/9/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import "VC_GamePlay.h"
 #import "VC_ZoneSelector.h"
 #import "GamePlayData.h"

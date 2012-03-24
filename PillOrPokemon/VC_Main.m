@@ -1,14 +1,7 @@
-//
-//  VC_Main.m
-//  PillOrPokemon
-//
-//  Created by Alexander Freas on 1/5/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import "VC_Main.h"
-#import "VC_ZoneSelector.h"
 
+
+@class VC_ZoneSelector;
 
 @implementation VC_Main
 
