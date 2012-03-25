@@ -1,9 +1,19 @@
 #import "VC_ZoneSelector.h"
 #import "Zone.h"
 
+typedef enum  {
+FromHelpDialog = 0,
+FromUnpaidAlertDialog = 1
+} SelectedButtonState;
 
-@implementation VC_ZoneSelector
+typedef enum {
+    BuyButton = 0,
+    CancelButton = 1,
+} AlertButton;
 
+@implementation VC_ZoneSelector {
+    SelectedButtonState state;
+}
 
 
 -(id)init {
@@ -35,6 +45,7 @@
                                          cancelButtonTitle:@"Buy Now!"
                                          otherButtonTitles:@"Cancel", nil];
     [alert show];
+    state = FromUnpaidAlertDialog;
 }
 
 -(IBAction)zoneSelected:(id)sender  {
@@ -104,7 +115,15 @@
                                               cancelButtonTitle:@"Thanks!" 
                                               otherButtonTitles:nil];
     [helpAlert show];
+    state = FromHelpDialog;
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
+    if (state == FromUnpaidAlertDialog && buttonIndex == BuyButton) {
+        NSURL *url = [NSURL URLWithString:@"http://itunes.apple.com/us/app/pill-or-pokemon/id500955886"];
+        [[UIApplication sharedApplication] openURL:url];
+    }
 }
 
 -(void)viewDidAppear:(BOOL)animated {

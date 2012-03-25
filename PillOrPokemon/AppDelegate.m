@@ -9,6 +9,7 @@
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [application setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
     mainView = [[VC_Main alloc] init];
     
     
