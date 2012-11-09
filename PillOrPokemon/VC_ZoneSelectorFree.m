@@ -1,33 +1,16 @@
-#import "VC_ZoneSelector.h"
-#import "Zone.h"
+#import "VC_ZoneSelectorFree.h"
 
-typedef enum  {
-FromHelpDialog = 0,
-FromUnpaidAlertDialog = 1
-} SelectedButtonState;
-
-typedef enum {
-    BuyButton = 0,
-    CancelButton = 1,
-} AlertButton;
-
-@implementation VC_ZoneSelector {
-    SelectedButtonState state;
-}
+@implementation VC_ZoneSelector
 
 
 -(id)init {
-    self = [super initWithNibName:@"ZoneSelector" bundle:[NSBundle mainBundle]];
+    self = [super initWithNibName:@"ZoneSelectorFree" bundle:[NSBundle mainBundle]];
     return self;
-}
-
--(void)refresh {
-    [self configureZoneViews];
 }
 
 -(void)loadZone:(NSInteger)zone {
     
-    VC_GamePlay *gameView = [[VC_GamePlay alloc] initWithZone:zone zoneSelector:self];
+    VC_GamePlay *gameView = [[VC_GamePlay alloc] initWithZone:zone];
     UINavigationController *game = [[UINavigationController alloc] initWithRootViewController:gameView];
     game.navigationBar.tintColor = [UIColor blackColor];
     game.modalPresentationStyle = UIModalPresentationPageSheet;
@@ -36,75 +19,11 @@ typedef enum {
     
 }
 
--(void)displayAlertForUnpaidVersion {
-    
-    NSString *alertMessage = @"This version only has the first zone available. If you like the game, please consider purchasing the full version!";
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Demo Version!"
-                                                   message:alertMessage 
-                                                  delegate:self
-                                         cancelButtonTitle:@"Buy Now!"
-                                         otherButtonTitles:@"Cancel", nil];
-    [alert show];
-    state = FromUnpaidAlertDialog;
-}
-
 -(IBAction)zoneSelected:(id)sender  {
     
     UIButton *zoneButton = (UIButton *)sender;
-    
-    if (zoneButton.tag != 1) {
-        [self displayAlertForUnpaidVersion];
-    } else {
-        [self loadZone:zoneButton.tag];
-    }
-}
+    [self loadZone:zoneButton.tag];
 
--(void)placeCompletedLabelInZone:(NSInteger)theZone {
-
-    UIButton *zoneButton = (UIButton *)[self.view viewWithTag:theZone];
-    UILabel *completed = [[UILabel alloc] initWithFrame:CGRectMake(-20, zoneButton.frame.size.height/2 - 20, 160, 40)];
-    
-    completed.text = @"Completed";
-    completed.font = [UIFont fontWithName:@"MarkerFelt-Thin" size:20.0];
-    completed.textAlignment = UITextAlignmentCenter;
-    completed.layer.cornerRadius = 5;
-    completed.transform = CGAffineTransformMakeRotation(M_PI - (M_PI / 8) * 6);
-    completed.backgroundColor = [[UIColor alloc] initWithRed:1 green:1 blue:0 alpha:0.5];    
-    completed.tag = 1;
-    
-    for (UIView *view in [zoneButton subviews]) {
-        if ([view isKindOfClass:[UILabel class]]) {
-            [view removeFromSuperview];
-        }
-    }
-
-    [zoneButton addSubview:completed];
-}
-
--(void)configureZoneViews {
-
-    NSArray *zones = [[GamePlayData sharedInstance] zones];
-    
-    
-    if(zones != nil) {
-        
-        for(Zone *zone in zones) {
-            
-            UIButton *imageView = (UIButton *)[self.view viewWithTag:[zone.gameZone intValue]];
-            
-            [imageView reloadInputViews];
-            
-            if ([zone.unlocked isEqualToNumber:[NSNumber numberWithBool:YES]]) {                
-                imageView.alpha = 1;
-                
-                if ([zone.completed isEqualToNumber:[NSNumber numberWithBool:YES]]) {
-                    [self placeCompletedLabelInZone:[zone.gameZone intValue]];
-                }
-            } else {
-                imageView.alpha = .25;
-            }
-        }
-    }
 }
 
 -(IBAction)showHelp:(id)sender {
@@ -115,21 +34,7 @@ typedef enum {
                                               cancelButtonTitle:@"Thanks!" 
                                               otherButtonTitles:nil];
     [helpAlert show];
-    state = FromHelpDialog;
-}
-
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
-    if (state == FromUnpaidAlertDialog && buttonIndex == BuyButton) {
-        NSURL *url = [NSURL URLWithString:@"http://itunes.apple.com/us/app/pill-or-pokemon/id500955886"];
-        [[UIApplication sharedApplication] openURL:url];
-    }
-}
-
--(void)viewDidAppear:(BOOL)animated {
-
-    [super viewDidAppear:animated];
-    [self configureZoneViews];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

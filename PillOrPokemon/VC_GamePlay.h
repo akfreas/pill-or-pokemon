@@ -1,10 +1,18 @@
-@class VC_ZoneSelector;
+//
+//  VC_GamePlay.h
+//  PillOrPokemon
+//
+//  Created by Alexander Freas on 1/9/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
 
-@interface VC_GamePlay : UIViewController <UIAlertViewDelegate, UIPopoverControllerDelegate> {
+#import <UIKit/UIKit.h>
+
+@interface VC_GamePlay : UIViewController < UIAlertViewDelegate, UIPopoverControllerDelegate> {
     
     
 }
 
--(id)initWithZone:(NSInteger)theZone zoneSelector:(VC_ZoneSelector *)theZoneSelector;
+-(id)initWithZone:(NSInteger)theZone;
 -(IBAction)chooseType:(id)sender;
 @end

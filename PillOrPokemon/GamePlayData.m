@@ -8,9 +8,6 @@
 
 #import "GamePlayData.h"
 #import "QuizItem.h"
-#import "Zone.h"
-
-//static GamePlayData *gamePlayData;
 
 @implementation GamePlayData {
     
@@ -22,145 +19,39 @@
 }
 
 
-+(GamePlayData *)sharedInstance {
-    
-    static GamePlayData *gamePlayData = nil;
-    if (!gamePlayData) {
-        gamePlayData = [[self alloc] init];
-    }
-    
-    static dispatch_once_t pred;
-	dispatch_once(&pred, ^{
-		gamePlayData = [[GamePlayData alloc] init];
-	});
-	
-    return gamePlayData;
-}
-
-
-
 
 +(void)createDatabaseForFirstUse {
     
-    [[GamePlayData sharedInstance] importPPData];
-    [[GamePlayData sharedInstance] resetZones];
+    NSError *error;
+    NSURL *urlForDbInBundle = [[NSBundle mainBundle] URLForResource:@"PillOrPokemonData" withExtension:@"sqlite"];
+    NSURL *urlForDbInDocuments = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    [urlForDbInDocuments URLByAppendingPathComponent:@"PillOrPokemonData.sqlite"];
+
+    if(![[NSFileManager defaultManager] removeItemAtURL:urlForDbInDocuments error:&error]) {
+        NSLog(@"Error: %@", [error localizedDescription]);
+    }
+    if (![[NSFileManager defaultManager] copyItemAtURL:urlForDbInBundle toURL:urlForDbInDocuments error:&error]) {
+        NSLog(@"Error: %@", [error localizedDescription]);
+    }
 }
 
 
 
-
-
--(id)init {
+-(id)initWithZone:(NSInteger)zone {
     self = [super init];
     
     if (self) {
         context = [self managedObjectContext];     
+        [self setQuizItemsInZone:zone];
     }
     
     return self;   
 }
 
--(void)importPPData {
-    
-    
-    NSArray *zoneItems = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"PPData" ofType:@"plist"]] objectForKey:@"Root"];
-    NSError *error;
-    
-    for (int i=0; i<[zoneItems count]; i++) {
-        NSArray *quizItems = [zoneItems objectAtIndex:i];
-        for (int y=0; y<[quizItems count]; y++) {
-            QuizItem *quizItem = [NSEntityDescription insertNewObjectForEntityForName:@"QuizItem" inManagedObjectContext:context];
-            NSDictionary *quizItemFromDict = [quizItems objectAtIndex:y];
-            
-            quizItem.name = [quizItemFromDict objectForKey:@"name"];
-            quizItem.itemDescription = [quizItemFromDict objectForKey:@"description"];
-            quizItem.type = [quizItemFromDict objectForKey:@"type"];
-            quizItem.correct = [NSNumber numberWithBool:NO];
-            quizItem.gameZone = [NSNumber numberWithInt:i + 1];
-            
-            [context save:&error];
-        }
-    }
 
 
-}
-
-
--(NSFetchRequest *)zoneFetchRequest {
-    
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Zones" inManagedObjectContext:[self managedObjectContext]];
-    [fetchRequest setEntity:entity];
-    return fetchRequest;
-}
-
--(void)resetZones {
-    
-    NSError *error;
-    
-    for (int i=1; i<=4; i++) {
-        
-        Zone *zone = [NSEntityDescription insertNewObjectForEntityForName:@"Zones" inManagedObjectContext:context];
-        zone.gameZone = [NSNumber numberWithInt:i];
-        zone.completed = [NSNumber numberWithBool:NO];
-        
-        if (i==1) {
-            zone.unlocked = [NSNumber numberWithBool:YES];
-        } else {
-            zone.unlocked = [NSNumber numberWithBool:NO];
-        }
-        
-        [context save:&error];
-    }
-}
-
--(NSArray *)quizItems {
-    return quizItemsInZone;
-}
-
--(NSArray *)zones {
-    NSFetchRequest *fetchRequest =[self zoneFetchRequest];
-    NSError *error;
-    return [context executeFetchRequest:fetchRequest error:&error];
-}
-
--(void)unlockZone:(NSInteger)theZone {
-    
-    NSError *error;
-    
-    NSFetchRequest *request = [self zoneFetchRequest];
-    
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"gameZone == %d", theZone];
-    [request setPredicate:predicate];
-    
-    Zone *zone = (Zone *)[[context executeFetchRequest:request error:&error] lastObject];
-    zone.unlocked = [NSNumber numberWithBool:YES];
-    [context save:&error];
-}
-
--(void)markZoneComplete:(NSInteger)theZone {
-    
-    NSError *error;
-    
-    NSFetchRequest *request = [self zoneFetchRequest];
-    
-    NSPredicate *predicateForZone = [NSPredicate predicateWithFormat:@"gameZone == %d", theZone];
-    [request setPredicate:predicateForZone];
-    
-    Zone *zone = (Zone *)[[context executeFetchRequest:request error:&error] lastObject];
-    zone.completed = [NSNumber numberWithBool:YES];
-    [context save:&error];
-
-    NSFetchRequest *quizItemRequest = [self quizItemFetchRequest];
-    [quizItemRequest setPredicate:predicateForZone];
-    NSArray *quizItems = [context executeFetchRequest:quizItemRequest error:&error];
-    for (int i=0; i<[quizItems count]; i++) {
-        QuizItem *item = [quizItems objectAtIndex:i];
-        item.correct = [NSNumber numberWithBool:NO];
-        [context save:&error];
-    }
-    
+-(QuizItem *)quizItemAtIndex:(NSInteger)index {
+    return [quizItemsInZone objectAtIndex:index];
 }
 
 -(NSInteger)count {
@@ -192,28 +83,21 @@
     }
 }
 
--(void)setZone:(NSInteger)zone {
-    [self setQuizItemsInZone:zone];
-}
 
--(NSFetchRequest *)quizItemFetchRequest {
-   NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-   
-   NSEntityDescription *entity = [NSEntityDescription entityForName:@"QuizItem" inManagedObjectContext:context];
-   [fetchRequest setEntity:entity];
-   return fetchRequest;
-}
 
 -(void)setQuizItemsInZone:(NSInteger)zone {
     
-    NSFetchRequest *request = [self quizItemFetchRequest];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"QuizItem" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"gameZone == %d AND correct == %d", zone, NO];
-    [request setPredicate:predicate];
+    [fetchRequest setPredicate:predicate];
     
     NSError *error;
 
-    quizItemsInZone = [NSMutableArray arrayWithArray:[context executeFetchRequest:request error:&error]];
+    quizItemsInZone = [NSMutableArray arrayWithArray:[context executeFetchRequest:fetchRequest error:&error]];
 }
 
 -(NSManagedObjectContext *)managedObjectContext {
@@ -246,7 +130,7 @@
     }
 	
     NSURL *storeUrl = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-    storeUrl = [storeUrl URLByAppendingPathComponent:@"PillOrPokemonData.sqlite"];
+    [storeUrl URLByAppendingPathComponent:@"PillOrPokemonData.sqlite"];
 	
     NSLog(@"DB Location: %@", storeUrl);
 	NSError *error = nil;

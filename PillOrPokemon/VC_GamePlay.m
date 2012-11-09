@@ -1,5 +1,12 @@
+    //
+//  VC_GamePlay.m
+//  PillOrPokemon
+//
+//  Created by Alexander Freas on 1/9/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
 #import "VC_GamePlay.h"
-#import "VC_ZoneSelector.h"
 #import "GamePlayData.h"
 #import "QuizItem.h"
 
@@ -23,27 +30,24 @@
     NSUInteger zone;
     NSUInteger totalNumberOfQuestions;
     
-    NSArray *quizData;
+    GamePlayData *quizData;
     NSMutableArray *incorrectQuizQuestions;
     NSArray *selectionType;
     QuizItem *currentQuizItem;
-    
-    VC_ZoneSelector *zoneSelector;
 }
 
 
 
--(id)initWithZone:(NSInteger)theZone zoneSelector:(VC_ZoneSelector *)theZoneSelector {
+-(id)initWithZone:(NSInteger)theZone {
     self = [super initWithNibName:@"GamePlay" bundle:nil];
-    
-    zoneSelector = theZoneSelector;
     zone = theZone;
     quizProgressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
-    
+
     incorrectQuizQuestions = [NSMutableArray arrayWithCapacity:0];
-    [self resetGame];
+    quizData = [[GamePlayData alloc] initWithZone:theZone];
     totalNumberOfQuestions = [quizData count];
     selectionType = [[NSArray alloc] initWithObjects:@"pill", @"pokemon", nil];
+    [quizData shuffleQuizData];
     return self;
 }
 
@@ -88,7 +92,7 @@
         progressLabel.text = [NSString stringWithFormat:@"%d questions left", questionsRemaining];
 
         
-        currentQuizItem = [quizData objectAtIndex:currentQuizItemIndex];
+        currentQuizItem = [quizData quizItemAtIndex:currentQuizItemIndex];
         
         [self configureUIElementsForUnansweredQuestion];
         
@@ -101,14 +105,9 @@
         
         if (totalNumberOfQuestions == score) {
             perfect = YES;
-            [[GamePlayData sharedInstance] markZoneComplete:zone];
-            if (zone != 4) {
-                [[GamePlayData sharedInstance] unlockZone:zone + 1];
-                [[GamePlayData sharedInstance] markZoneComplete:zone];
-            }
         }
         [self showEndOfGameMessageWithStatus:perfect];
-        [[GamePlayData sharedInstance] save];
+        [quizData save];
     }
     
 }
@@ -122,13 +121,11 @@
                                                    delegate: self
                                           cancelButtonTitle: @"Main Menu"
                                           otherButtonTitles: nil];
-    if (perfect && zone < 4) {
-        
-        endOfGameMessage = [[NSString alloc] initWithString:@"Congratulations! You got a perfect score and have unlocked the next zone!"];
-    } else if (perfect && zone == 4) {
-        endOfGameMessage = [[NSString alloc] initWithString:@"Congratulations! You beat the game! If you enjoyed playing, please rate the game well on the iTunes store!"];
+    if (perfect) {
+        endOfGameMessage = [[NSString alloc] initWithString: @"Congratulations! You got a perfect score and have unlocked the next zone!"];
+        [alert addButtonWithTitle:@"Proceed to next zone"];
     } else {
-        endOfGameMessage = [[NSString alloc] initWithFormat:@"Your score was %d out of %d. Play again to get a perfect score and unlock the next level!", score, totalNumberOfQuestions];
+        endOfGameMessage = [[NSString alloc] initWithFormat: @"Your score was %d out of %d. Play again to get a perfect score and unlock the next level!", score, totalNumberOfQuestions];
         [alert addButtonWithTitle:@"Play again"];
     }
     
@@ -140,12 +137,13 @@
 
 
 -(void)setQuizData {
-    [[GamePlayData sharedInstance] setZone:zone];
-    quizData = [[GamePlayData sharedInstance] quizItems];
+    
+    NSString *gameInfoFile = [[NSBundle mainBundle] pathForResource:@"PPData" ofType:@"plist"];
+    NSDictionary *temp = [[NSDictionary alloc] initWithContentsOfFile:gameInfoFile];
     selectionType = [[NSArray alloc] initWithObjects:@"pill", @"pokemon", nil];
     totalNumberOfQuestions = [quizData count];
 
-    [[GamePlayData sharedInstance] shuffleQuizData];
+    [quizData shuffleQuizData];
 }
 
 -(void)configureUIElementsForUnansweredQuestion {
@@ -183,6 +181,11 @@
     [self dismissModalViewControllerAnimated:YES];    
 }
 
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    
+    [self goToHomeScreen];
+    
+}
 -(IBAction)clickNext:(id)sender {
     
     [self moveToNextItem];
@@ -209,23 +212,6 @@
     
 }
 
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
- 
-    switch (buttonIndex) {
-            
-        case 0:
-            [zoneSelector refresh];
-            [self goToHomeScreen];
-            
-        case 1:
-            [self resetGame];
-            break;
-            
-        default:
-            break;
-    }
-}
-
 -(void)viewDidLoad {
     [super viewDidLoad];
     
@@ -233,6 +219,13 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Reset" style:UIBarButtonItemStyleDone target:self action:@selector(resetGame)];
     
     [self resetGame];
+}
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

@@ -2,17 +2,14 @@
 @interface GamePlayData : NSObject
 
 
-+(GamePlayData *)sharedInstance;
 +(void)createDatabaseForFirstUse;
 
 
--(NSArray *)quizItems;
--(NSArray *)zones;
+
+-(id)initWithZone:(NSInteger)zone;
+-(QuizItem *)quizItemAtIndex:(NSInteger)index;
 -(NSInteger)count;
 -(void)save;
 -(void)shuffleQuizData;
--(void)setZone:(NSInteger)zone;
--(void)unlockZone:(NSInteger)theZone;
--(void)markZoneComplete:(NSInteger)theZone;
 
 @end

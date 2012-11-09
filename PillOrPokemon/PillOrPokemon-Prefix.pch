@@ -2,9 +2,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-#import <QuartzCore/QuartzCore.h>
 
 #import <Foundation/Foundation.h>
 
-#import "GamePlayData.h"
+#import "PlistFunctions.h"
 

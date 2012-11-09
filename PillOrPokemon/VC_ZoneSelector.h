@@ -1,6 +1,6 @@
 #import "VC_GamePlay.h"
 
-@interface VC_ZoneSelector : UIViewController <UIAlertViewDelegate> {
+@interface VC_ZoneSelector : UIViewController {
     
     UIView *selectorView;
     UIButton *button;
@@ -9,6 +9,5 @@
 }
 
 -(IBAction)zoneSelected:(id)sender;
--(void)refresh;
 
 @end
